@@ -240,7 +240,7 @@ font-weight: 900;
 .services .card h4 {
   margin-bottom: 20px;
 
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: 7px;
   text-transform: uppercase;
@@ -284,6 +284,13 @@ font-weight: 900;
 .tabs__nav button + button {
   margin-left: 15px;
 }
+.tabs__desc {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; */
+}
+
 
 .tabs__item {
   animation: fade 1s;
@@ -300,6 +307,8 @@ font-weight: 900;
 
 .tabs__item img {
   margin-bottom: 15px;
+  width: 700px;
+  height: 360px;
 }
 
 .tabs__item h4 {
@@ -310,12 +319,42 @@ font-weight: 900;
   color: #676770;
 }
 
-.tabs__desc {
-  max-width: 720px;
-  margin: 0 auto;
+
+/* Sekcja Jak to działa */
+.how-it-works {
+  padding: 50px 20px;
+  background-color: #e0e0e0;
+  text-align: center;
+  background-color: #383838;
 }
 
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
+.step {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+.title-how {
+  color: white;
+}
+/* Sekcja CTA */
+.cta {
+  padding: 50px 20px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+}
+
+.cta .btn {
+  margin: 10px;
+}
 
 /* ------------ FOOTER ------------ */
 
