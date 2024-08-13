@@ -493,7 +493,14 @@ font-weight: 900;
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
+  
+  body {
+   
+    font-weight: 320;
+  
+  }
+  
   .header__nav li + li {
     margin-left: 15px;
   }
@@ -502,7 +509,12 @@ font-weight: 900;
     font-size: 40px;
     margin-bottom: 50px;
   }
-
+  .logo {
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #69B9FF;
+  }
   .welcome__links a {
     display: block;
     width: 80%;
@@ -532,6 +544,32 @@ font-weight: 900;
 
   .tabs__item h4 {
     font-size: 24px;
+  }
+
+  .about .card {
+    padding: 10px 5px 5px;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+  }
+  
+  .about .card img {
+    margin-bottom: 20px;
+  
+    width: 15px;
+    height: 15px;
+   
+  }
+
+  .about .card h4 {
+    margin-bottom: 5px;
+  
+    font-size: 8px;
+    line-height: 1;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #676770;
   }
 }
 
