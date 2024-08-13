@@ -473,10 +473,6 @@ font-weight: 900;
     margin-top: 10px;
     margin-left: auto;
   }
-}
-
-
-@media (max-width: 600px) {
   .services .cards-wrapper {
     flex-direction: column;
     align-items: center;
@@ -491,6 +487,8 @@ font-weight: 900;
     margin-bottom: 40px;
   }
 }
+
+
 
 
 @media (min-width: 320px) {
