@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 /* Общие стили */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  margin-left: 0;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
 }
 
 p {
-  color: #6A859C;
+  color: #6a859c;
   line-height: 1.8;
 }
 
@@ -22,14 +23,12 @@ p {
   display: none !important;
 }
 
-
 .title-wrapper {
   margin-bottom: 60px;
 }
 
 .title {
   margin-bottom: 17px;
-
   font-size: 30px;
   line-height: 1.2;
   letter-spacing: 5px;
@@ -42,21 +41,24 @@ p {
   line-height: 1.2;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #8E8E9C;
+  color: #8e8e9c;
 }
 
 .common-section {
   text-align: center;
   padding: 80px 0;
 }
+
 .common-section--dark {
   background-color: #192024;
 }
+
 .common-section--dark * {
   color: #fff;
 }
+
 .common-section--dark .subtitle {
-  color: #E8E8E8;
+  color: #e8e8e8;
 }
 
 /* ------------ HEADER ------------ */
@@ -64,13 +66,10 @@ p {
 .header {
   padding: 20px 0;
   width: 100%;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-
-
   background-color: #fff;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
@@ -85,7 +84,7 @@ p {
   font-size: 25px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #69B9FF;
+  color: #69b9ff;
 }
 
 .header__nav ul {
@@ -103,20 +102,16 @@ p {
 }
 
 .header__nav a:hover {
-  color: #0082F3;
+  color: #0082f3;
 }
 
 .header__nav a:active {
   color: #0062b6;
 }
 
-
-
-
 /* ------------ MAIN ------------ */
 
 .main {
-
 }
 
 /* ------------ WELCOME ------------ */
@@ -125,14 +120,11 @@ p {
   min-height: 600px;
   height: 100vh;
   padding: 195px 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #fff;
   text-align: center;
-
   background-color: #282936;
   background-image: url("img/welcome-bg.jpg");
   background-size: cover;
@@ -140,9 +132,8 @@ p {
 }
 
 .welcome__heading {
-
   margin-bottom: 100px;
-font-weight: 900;
+  font-weight: 900;
   font-size: 60px;
   line-height: 1.3;
   letter-spacing: 4px;
@@ -151,39 +142,36 @@ font-weight: 900;
   text-shadow: 1px 1px 2px rgb(62, 62, 66);
 }
 
-.welcome__links > * + * {
-  margin-left: 20px;
+.welcome__links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Ensures a minimum of 15px spacing */
 }
-
-
-
-
-
 
 .link {
   display: inline-block;
   padding: 10px 30px;
-
   font-size: 16px;
   letter-spacing: 2px;
+  text-align: center;
   text-transform: uppercase;
-
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   transition: border-color 0.1s, background-color 0.1s;
+  line-height: 20px; /* Adjust line height for vertical alignment */
 }
+
 .link:hover {
   background-color: #89c2f3;
 }
+
 .link:active {
   background-color: #0f8fff;
 }
 
-
 /* ------------ ABOUT (WHAT WE DO) ------------ */
 
 .about {
-
 }
 
 .about .cards-wrapper {
@@ -196,21 +184,18 @@ font-weight: 900;
 .about .card {
   padding: 35px 15px 20px;
   width: 250px;
-  border: 1px solid #DCEBF7;
+  border: 1px solid #dcebf7;
   border-radius: 5px;
 }
 
 .about .card img {
   margin-bottom: 20px;
-
   width: 44px;
   height: 44px;
- 
 }
 
 .about .card h4 {
   margin-bottom: 15px;
-
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 7px;
@@ -218,8 +203,8 @@ font-weight: 900;
   color: #676770;
 }
 
+/* ------------ SERVICES ------------ */
 
-/* ------------ ABOUT (WHAT WE DO) ------------ */
 .services {
 }
 
@@ -239,7 +224,6 @@ font-weight: 900;
 
 .services .card h4 {
   margin-bottom: 20px;
-
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 7px;
@@ -250,15 +234,12 @@ font-weight: 900;
   margin-top: 15px;
 }
 
-
-
 /* ------------ TABS ------------ */
-.tab-section {
 
+.tab-section {
 }
 
 .tabs {
-
 }
 
 .tabs__nav {
@@ -267,30 +248,28 @@ font-weight: 900;
 
 .tabs__nav button {
   padding: 0 30px;
-
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  
-  background-color: #92A0AD;
+  color: #ffffff;
+  background-color: #92a0ad;
   border-radius: 4px;
 }
 
 .tabs__nav button.active {
-  background-color: #2E80B6;
+  background-color: #2e80b6;
 }
 
 .tabs__nav button + button {
   margin-left: 15px;
 }
+
 .tabs__desc {
   /* display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px; */
 }
-
 
 .tabs__item {
   animation: fade 1s;
@@ -313,19 +292,17 @@ font-weight: 900;
 
 .tabs__item h4 {
   margin-bottom: 15px;
-
   font-size: 31px;
   line-height: 1;
   color: #676770;
 }
 
+/* ------------ HOW IT WORKS SECTION ------------ */
 
-/* Sekcja Jak to działa */
 .how-it-works {
   padding: 50px 20px;
-  background-color: #e0e0e0;
-  text-align: center;
   background-color: #383838;
+  text-align: center;
 }
 
 .steps {
@@ -341,10 +318,13 @@ font-weight: 900;
   border-radius: 10px;
   width: 300px;
 }
+
 .title-how {
   color: white;
 }
-/* Sekcja CTA */
+
+/* ------------ CALL TO ACTION (CTA) ------------ */
+
 .cta {
   padding: 50px 20px;
   background-color: #28a745;
@@ -359,7 +339,6 @@ font-weight: 900;
 /* ------------ FOOTER ------------ */
 
 .footer {
-
 }
 
 .footer__desc {
@@ -368,7 +347,6 @@ font-weight: 900;
 
 .footer__desc h4 {
   margin-bottom: 25px;
-
   font-size: 18px;
   line-height: 1;
   letter-spacing: 4px;
@@ -378,7 +356,7 @@ font-weight: 900;
 
 .footer__desc a {
   font-size: 13px;
-  color: #668CAD;
+  color: #668cad;
 }
 
 .footer__desc li {
@@ -390,12 +368,10 @@ font-weight: 900;
   content: "";
   width: 100%;
   height: 1px;
-
   position: absolute;
   right: 0;
   bottom: 0;
-
-  background-color: #D5D5E0;
+  background-color: #d5d5e0;
 }
 
 .footer__desc li + li {
@@ -419,16 +395,14 @@ font-weight: 900;
   width: calc(100% - 34px);
 }
 
-.footer__social img { 
+.footer__social img {
   margin-right: 10px;
 }
 
 .footer__about {
-
 }
 
 .footer__links {
-
 }
 
 .footer__social img {
@@ -440,217 +414,94 @@ font-weight: 900;
 .footer__copy {
   padding: 40px 0;
   text-align: center;
-  background-color: #383838;
+  background-color: #8e8e9c;
 }
 
 .footer__copy p {
-  color: #9E9E9E;
+  color: #fff;
 }
 
+/* --------------------- MEDIA QUERIES --------------------- */
 
-@media (max-width: 829px) {
-  .footer__desc-container {
-    justify-content: space-evenly;
+/* Для экранов до 428px */
+@media (max-width: 428px) {
+  .header__container {
+    flex-wrap: wrap;
   }
-  .footer__desc h4 {
-    margin-bottom: 10px;
-  }
-  .footer__desc {
-    padding-top: 0;
-  }
-}
 
-@media (max-width: 660px) {
-  .tabs__nav {
-    margin-bottom: 30px;
+  .header__nav {
+    margin-top: 20px;
+    width: 100%;
   }
-  .tabs__nav button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 30px;
+
+  .header__nav ul {
+    justify-content: space-between;
+    width: 100%;
   }
-  .tabs__nav button + button {
-    margin-top: 10px;
-    margin-left: auto;
+
+  .welcome {
+    padding: 120px 0;
   }
-  .services .cards-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+
+  .about .card {
+    width: 100%;
   }
 
   .services .card {
-    width: 80%;
+    width: 100%;
   }
 
-  .title-wrapper {
-    margin-bottom: 40px;
-  }
-}
-
-
-
-
-@media (min-width: 320px) {
-  
-  body {
-   margin-left: 0;
-
-  
-  }
-  
-  .header__nav li + li {
-    margin-left: 15px;
+  .steps {
+    flex-direction: column;
   }
 
-  .welcome__heading {
-    font-size: 40px;
-    margin-bottom: 50px;
-  }
-  .logo {
-    font-size: 15px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #69B9FF;
-  }
-  .welcome__links a {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .welcome__links > * + * {
-    margin-top: 20px;
-  }
-
-  body {
-    font-size: 12px;
-  }
-
-  .about .card h4 {
-    font-size: 16px;
-  }
-
-  .services .card h4 {
-    font-size: 16px;
-  }
-
-  .services .card .link {
-    font-size: 14px;
-  }
-
-  .tabs__item h4 {
-    font-size: 24px;
-  }
-
-  .about .card {
-    padding: 10px 5px 5px;
-    width: 120px;
-    height: 60px;
-    border: 1px solid #DCEBF7;
-    border-radius: 5px;
-  }
-  
-  .about .card img {
-    margin-bottom: 20px;
-  
-    width: 15px;
-    height: 15px;
-   
-  }
-
-  .about .card h4 {
-    margin-bottom: 5px;
-  
-    font-size: 8px;
-    line-height: 1;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #676770;
+  .footer__desc-container {
+    gap: 40px 40px;
   }
 }
 
-@media (max-width: 319px) {
-  
-  body {
-   margin-left: 0;
-
-  
-  }
-  
-  .header__nav li + li {
-    margin-left: 15px;
+/* Для экранов от 768px и выше */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
 
-  .welcome__heading {
-    font-size: 40px;
-    margin-bottom: 50px;
-  }
-  .logo {
-    font-size: 15px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #69B9FF;
-  }
-  .welcome__links a {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  .header {
+    padding: 25px 0;
   }
 
-  .welcome__links > * + * {
-    margin-top: 20px;
+  .header__container {
+    flex-wrap: nowrap;
   }
 
-  body {
-    font-size: 12px;
+  .welcome {
+    padding: 180px 0;
   }
 
-  .about .card h4 {
-    font-size: 16px;
+  .about .cards-wrapper {
+    justify-content: space-between;
   }
 
-  .services .card h4 {
-    font-size: 16px;
+  .services .cards-wrapper {
+    gap: 30px;
   }
 
-  .services .card .link {
-    font-size: 14px;
+  .services .card {
+    width: 45%;
   }
 
-  .tabs__item h4 {
-    font-size: 24px;
-  }
-
-  .about .card {
-    padding: 10px 5px 5px;
-    width: 120px;
-    height: 60px;
-    border: 1px solid #DCEBF7;
-    border-radius: 5px;
-  }
-  
-  .about .card img {
-    margin-bottom: 20px;
-  
-    width: 15px;
-    height: 15px;
-   
-  }
-
-  .about .card h4 {
-    margin-bottom: 5px;
-  
-    font-size: 8px;
-    line-height: 1;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #676770;
+  .footer__desc-container {
+    gap: 20px 20px;
   }
 }
 
+/* Для экранов от 1158px и выше */
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 
-
-
+  .footer__desc-container > * {
+    width: calc(33.333% - 30px);
+  }
+}
