@@ -11,7 +11,7 @@ body {
 .container {
   max-width: 1152px;
   padding: 0 15px;
- /* margin: 0 auto;*
+  margin: 0 auto;
   /
 }
 
@@ -124,7 +124,7 @@ p {
   background-color: #282936;
   background-image: url("img/welcome-bg.jpg");
   background-size: cover;
- /* background-position: center; */
+ background-position: center; 
 }
 
 .welcome__heading {
