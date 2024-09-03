@@ -4,8 +4,8 @@ const tabsItems = document.querySelectorAll(".tabs__item");
 
 // Ф-я скрывает табы и убирает active у кнопок
 function hideTabs() {
-  tabsItems.forEach(item => item.classList.add("hide"));
-  tabsBtns.forEach(item => item.classList.remove("active"));
+  tabsItems.forEach((item) => item.classList.add("hide"));
+  tabsBtns.forEach((item) => item.classList.remove("active"));
 }
 
 // Ф-я показывает переданный номер таба и делает соответствующую ему кнопку активной.
@@ -17,29 +17,31 @@ function showTab(index) {
 hideTabs();
 showTab(0);
 
-
-tabsBtns.forEach((btn, index) => btn.addEventListener("click", () => {
-  hideTabs();
-  showTab(index);
-}));
-
-
-
+tabsBtns.forEach((btn, index) =>
+  btn.addEventListener("click", () => {
+    hideTabs();
+    showTab(index);
+  })
+);
 
 // Anchors
 const anchors = document.querySelectorAll(".header__nav a");
 
-anchors.forEach(anc => {
-  anc.addEventListener("click", function(event) {
+anchors.forEach((anc) => {
+  anc.addEventListener("click", function (event) {
     event.preventDefault();
 
     const id = anc.getAttribute("href");
     const elem = document.querySelector(id);
 
-
     window.scroll({
       top: elem.offsetTop - 80,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
+});
+
+document.querySelector('.burger-menu').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.header__nav').classList.toggle('show');
 });
