@@ -9,88 +9,129 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <div class="header_nav_button">
-      <div class="header_container">
-        <a class="logo" href="./index.html">
-          Home<span class="header-us-span">Synk</span>
-          
-            
-          </h2>
-        </a>
-        <nav class="header_desktop_nav">
-          <ul class="header_desktop_nav_list">
-            <li class="header_desktop_list">
-              <a href="#about-us">O NAS</a>
+    <header class="page-header"></header>
+      <div class="container page-headr-container">
+        <!--Навігація на інші сторінки-->
+        <nav class="page-nav">
+          <!--Логотип текстовий-->
+          <a class="logo header__link logo-header" href="index.html"
+            >Home<span class="logo-textdark">Sync</span>
+          </a>
+          <ul class="list menu">
+            <li class="menu-item">
+              <a class="header__link menu-link current" href="!#">Studio</a>
             </li>
-            <li class="header_desktop_list">
-              <a href="#our-curses">KORZYŚCI</a>
+            <li class="menu-item">
+              <a class="header__link menu-link" href="!#">Portfolio</a>
             </li>
-            <li class="header_desktop_list">
-              <a href="#mentors">USŁUGI</a>
+            <li class="menu-item">
+              <a class="header__link menu-link" href="!#">Contacts</a>
             </li>
-            <li class="header_desktop_list">
-              <a href="#reviews">Rozwiązania</a>
-            </li>
-            <li class="header_desktop_list">
-              <a href="#signup" class=" ">Kontakt</a>
-            </li>
-            
           </ul>
         </nav>
-        <div class="header_main_content">
-          <!-- <a class="button_camera" href="#signup">
-            <svg class="button_camera_icon" width="16px" height="16px">
-              <use href="./img/icons.svg#icon-camera"></use>
-            </svg>
-          </a> -->
-          <button class="button_burger" type="button">
-            <svg class="burger_button">
-              <use href="./img/svg/hamburger-menu.svg"></use>
-            </svg>
-          </button>
-        </div>
-      <!-- </div>
-      <a href="#signup" class="header_sing_button">Kontakt</a>
-    </div> -->
-  </div>
- 
-  <div class="header_navigation_window ">
-    <div class="burger_list">
-      <button class="burger_icon_close" type="button">
-        <svg class="header_icon_close">
-          <use href="./img/svg/icon-close.svg"></use>
-        </svg>
-      </button>
-      <nav>
-        <ul class="burger_list_title">
-          <li class="header_about_us">
-            <a href="#about-us">O nas</a>
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./img/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+        <!--Contacts-->
+        <ul class="list contacts">
+          <li class="contact-item">
+            <a class="header__link contact-link mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header_about_us_list">
-            <a href="#our-curses">Korzyści</a>
-          </li>
-          <li class="header_about_us_list">
-            <a href="#mentors">Usługi</a>
-          </li>
-          <li class="header_about_us_list">
-            <a href="#reviews">Rozwiązania</a>
-          </li>
-          <li class="header_about_us_list">
-            <a href="#phone">Kontakt</a>
+          <li class="contact-item">
+            <a class="header__link contact-link phone" href="tel:+11(000)111-11-11"
+              >+11(000)111-11-11</a
+            >
           </li>
         </ul>
-      </nav>
-      <!-- <img
-        class="header_img"
-        srcset="./img/svg/hamburger-menu.svg 1x, ./img/svg/hamburger-menu.svg 2x"
-        src="./img/svg/hamburger-menu.svg"
-        alt="burgerpicture"
-      /> -->
-    </div>
-  </div>
-</header>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu-container">
+          <div>
+            <button class="mobile-menu-close-btn js-close-menu">
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./img/icons.svg#icon-close-modalsvg"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="list mobile-menu-list">
+                <li class="mobile-menu-item">
+                  <a class="header__link mobile-menu-link current" href="index.html"
+                    >O nas</a
+                  >
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="header__link mobile-menu-link" href="./portfolio.html"
+                    >Usługi</a
+                  >
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="header__link mobile-menu-link" href="index.html"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="list mobile-contacts">
+              <li class="mobile-phone-item">
+                <a class="header__link mobile-phone-link" href="tel:+11(000)111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-mail-item">
+                <a
+                  class="header__link mobile-mail-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-soc-list list">
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-instagramsvg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link header__link">
+                  <svg class="mobile-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-twittersvg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link header__link">
+                  <svg class="mobile-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-facebooksvg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item">
+                <a href="" class="mobile-soc-link header__link">
+                  <svg class="mobile-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-linkedinsvg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main id="main" class="main">
       <section class="welcome">
@@ -323,20 +364,68 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer__col">
-          <h3>Social Media</h3>
-          <ul>
-            <li><a href="#!">Facebook</a></li>
-            <li><a href="#!">Twitter</a></li>
-            <li><a href="#!">Instagram</a></li>
-          </ul>
+      <div class="container footer-content-wrapper">
+        <div class="footer-content-soc-wrapper">
+          <div class="footer-content">
+            <a class="logo-footer footer__link" href="index.html"
+              >HOME<span class="logo-textlight">SYNK</span></a
+            >
+                   </div>
+
+          <div class="list footer-soc-content">
+            <p class="footer-soc-text">Social media</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link footer__link">
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-instagramsvg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link footer__link">
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-twittersvg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link footer__link">
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-facebooksvg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link footer__link">
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-linkedinsvg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__col">
-          <p>&copy; 2024 HomeSync. All rights reserved.</p>
+
+        <div class="footer-container-form">
+          <p class="footer-form-title">Kontakt</p>
+          <ul class="list mobile-contacts">
+            <li class="mobile-phone-item">
+              <a class="header__link mobile-phone-link" href="tel:+11(000)111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-mail-item">
+              <a
+                class="footer__link mobile-mail-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

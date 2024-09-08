@@ -1,23 +1,31 @@
 // Heaader
-const modal = document.querySelector('.header_navigation_window');
-const closeButton = document.querySelector('.burger_icon_close');
-const burgerButton = document.querySelector('.button_burger');
+(() => {
+  const mobileMenu = document.querySelector(".js-menu-container");
+  const openMenuBtn = document.querySelector(".js-open-menu");
+  const closeMenuBtn = document.querySelector(".js-close-menu");
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    mobileMenu.classList.toggle("is-open");
+    const scrollLockMethod = !isMenuOpen
+      ? "disableBodyScroll"
+      : "enableBodyScroll";
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+  openMenuBtn.addEventListener("click", toggleMenu);
+  closeMenuBtn.addEventListener("click", toggleMenu);
 
-
-if (!modal.classList.contains('to_close')) {
-  modal.classList.add('to_close');
-}
-
-closeButton.addEventListener('click', function () {
-  modal.classList.add('to_close');
-});
-
-burgerButton.addEventListener('click', function () {
-  modal.classList.remove('to_close');
-});
-
-
-
+  // Закрываем мобильное меню на более широких экранах
+  // в случае изменения ориентации устройства.
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();
 
 // TABS
 const tabsBtns = document.querySelectorAll(".tabs__nav button");
@@ -62,7 +70,7 @@ anchors.forEach((anc) => {
   });
 });
 
-document.querySelector('.burger-menu').addEventListener('click', function() {
-  this.classList.toggle('active');
-  document.querySelector('.header__nav').classList.toggle('show');
+document.querySelector(".burger-menu").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".header__nav").classList.toggle("show");
 });

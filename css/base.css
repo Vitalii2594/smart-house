@@ -1,8 +1,21 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin-left: 0 auto;
-  }
-  
-
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 0 auto;
+}
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --navigation-active: #404bbf;
+  --white-text-color: #ffffff;
+  --tra-tim-fun: cubic-bezier(0.4, 0, 0.2, 1);
+  --tra-dur: 250ms;
+}
