@@ -1,0 +1,31 @@
+.about .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .about .card:hover {
+    background-color: #f4f4f4d3;
+  }
+  .about .card {
+    margin: 0   ;
+    padding: 15px;
+    width: 330px;
+    height: 180px;
+    border: 1px solid #dcebf7;
+    border-radius: 5px;
+  }
+  
+  .about .card h4 {
+    
+    font-size: 14;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 10px;
+  }
+  .about .card img {
+    width: 30px;
+    height: 50px;
+  }
