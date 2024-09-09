@@ -5,10 +5,12 @@
 @import url(./css/hero.css);
 
 @import url(./css/about.css);
+@import url(./css/comfort-services.css);
+@import url(./css//services.css);
+
 @import url(./css/footer.css);
 
 @import url(./css/media.css);
-
 
 .hide {
   display: none !important;
@@ -26,7 +28,14 @@
   text-transform: uppercase;
   color: #676770;
 }
-
+.title-services {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 .subtitle {
   font-size: 17px;
   line-height: 1.2;
@@ -44,9 +53,6 @@
   background-color: #192024;
 }
 
-.common-section--dark * {
-  color: #000000;
-}
 .common-section--dark h4 {
   color: #000000;
   font-weight: 600;
@@ -55,61 +61,11 @@
   color: #e8e8e8;
 }
 
-
-
-
 /* ------------ WELCOME ------------ */
-
 
 /* ------------ ABOUT (WHAT WE DO) ------------ */
 
-
 /* ------------ SERVICES ------------ */
-
-.services .cards-wrapper {
-  display: flex;
- gap: 30px  ;
- flex-wrap: wrap;
- margin: 0 auto;
-
-}
-.card {
-  box-shadow: rgba(26, 1, 54, 0.12) 0px 9px 22px 0px;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  max-width: 360px;
-
- 
-  box-sizing: border-box;
-  position: relative;
-  margin: 0 auto;
-  padding: 25px 25px;
-
-}
-.services .card img {
-  margin-bottom: 20px;
-  max-width: 320px;
-  height: 180px;
-  border-radius: 10px;
-}
-
-.services .card h4 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-}
-
-.services .link {
-  margin-top: 15px;
-  margin-bottom: 50px;
-}
 
 /* ------------ TABS ------------ */
 .tabs__nav {
@@ -118,7 +74,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 30px ;
+  gap: 30px;
   margin-bottom: 50px;
 }
 
@@ -126,7 +82,11 @@
   border-radius: 50px;
   white-space: nowrap;
   color: rgb(255, 255, 255);
-  background-image: linear-gradient(-180deg, rgb(142, 98, 255) 0%, rgb(60, 0, 150) 96%);
+  background-image: linear-gradient(
+    -180deg,
+    rgb(142, 98, 255) 0%,
+    rgb(60, 0, 150) 96%
+  );
   background-position: initial;
   background-size: initial;
   background-attachment: initial;
@@ -146,7 +106,7 @@
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
-  
+
   text-decoration: none !important;
   background-repeat: no-repeat !important;
 }
@@ -154,8 +114,6 @@
 .tabs__nav button.active {
   background-color: #2e80b6;
 }
-
-
 
 .tabs__item {
   animation: fade 1s;
@@ -187,14 +145,10 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 15;
-  
-
-  
 }
 .tabs__text {
   margin-bottom: 20px;
   max-width: 100%;
-  
 }
 /* ------------ HOW IT WORKS SECTION ------------ */
 
@@ -209,20 +163,17 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-
 }
 .step:hover {
   background-color: #f4f4f4d3;
 }
 .step {
-
   background-color: white;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
   width: 280px;
   height: 100%;
-  
 }
 
 .title-how {
@@ -245,4 +196,3 @@
 /* ------------ FOOTER ------------ */
 
 /* Footer end*/
-

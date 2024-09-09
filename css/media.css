@@ -9,6 +9,8 @@
 }
 
 @media screen and (max-width: 767px) {
+ 
+ 
   .menu {
     display: none;
   }
@@ -149,12 +151,12 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1152px;
+    width: 1200px;
     padding: 0 15px;
   }
- 
+
   .logo {
     margin-right: 76px;
     line-height: 1.33;

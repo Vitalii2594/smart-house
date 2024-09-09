@@ -1,0 +1,44 @@
+.comfort__services .cards-wrapper {
+    display: flex;
+   gap: 30px  ;
+   flex-wrap: wrap;
+   margin: 0 auto;
+  
+  }
+  .card {
+    box-shadow: rgba(26, 1, 54, 0.12) 0px 9px 22px 0px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    max-width: 360px;
+  
+   
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding: 25px 25px;
+  
+  }
+  .comfort__services .card img {
+    margin-bottom: 20px;
+    max-width: 320px;
+    height: 180px;
+    border-radius: 10px;
+  }
+  
+  .comfort__services .card h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+  }
+  
+  .comfort__services .link {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }

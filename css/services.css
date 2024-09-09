@@ -1,0 +1,171 @@
+/* Ogólne style dla sekcji */
+.smart-home {
+  background-color: #f4f4f9;
+  padding: 40px 0;
+}
+
+.smart-home h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.smart-home p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Układ siatki: 3 kolumny na większych ekranach */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumny */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styl dla każdej karty */
+.service {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styl ikon */
+.service i {
+  font-size: 40px;
+  color: #4d5ae5; /* Kolor ikony */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Styl tytułów */
+.service h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styl tekstu */
+.service p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Efekt hover dla aktywnej karty */
+.service:hover i,
+.service:hover h2 {
+  color: #333aa1; /* Intensywniejszy odcień niebieskiego dla hover */
+}
+
+/* Styl dla aktywnej karty */
+.service.active {
+  background-color: #4d5ae5;
+  color: white;
+}
+
+.service.active i,
+.service.active h2 {
+  color: white;
+}
+
+/* Responsywność */
+@media (max-width: 1024px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumny na średnich ekranach */
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr; /* 1 kolumna na małych ekranach */
+  }
+}
+
+/* smart-control */
+
+/* Stylizacja sekcji głównej */
+.smart-control {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.smart-control h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.smart-control p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Układ siatki dla usług */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolumny */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styl dla każdej karty usługi */
+.service-box {
+  background: linear-gradient(145deg, #f9f9f9, #f0f0f0);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #333;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Ikony */
+.icon {
+  font-size: 48px;
+  color: #4d5ae5;
+  margin-bottom: 20px;
+}
+
+/* Stylizacja nagłówków */
+.service-box h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Stylizacja tekstu opisu */
+.service-box p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* 1 kolumna na małych ekranach */
+  }
+}

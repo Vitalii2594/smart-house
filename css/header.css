@@ -1,7 +1,7 @@
 .page-header {
   
   background-color: #ffffff;
-  
+
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+ 
 }
 
 .page-nav {
