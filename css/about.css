@@ -1,31 +1,86 @@
+/* Styles for the cards */
 .about .cards-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .about .card:hover {
-    background-color: #f4f4f4d3;
-  }
-  .about .card {
-    margin: 0   ;
-    padding: 15px;
-    width: 330px;
-    height: 225px;
-    border: 1px solid #dcebf7;
-    border-radius: 5px;
-  }
-  
-  .about .card h4 {
-    
-    font-size: 14;
-    line-height: 1.1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #676770;
-    margin-bottom: 10px;
-  }
-  .about .card img {
-    width: 30px;
-    height: 50px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+}
+
+.about .about__card {
+  width: 160px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #dcebf7;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .about__card:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.05);
+}
+
+.about .about__card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.about .about__card h4 {
+  font-size: 12px;
+  color: #676770;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 1500px;
+  max-height: 1500px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.close-button-ab {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

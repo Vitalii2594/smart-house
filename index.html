@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeSync</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <header class="page-header"></header>
+    <header class="page-header">
       <div class="container page-headr-container">
         <!--Навігація на інші сторінки-->
         <nav class="page-nav">
@@ -20,13 +22,17 @@
           </a>
           <ul class="list menu">
             <li class="menu-item">
-              <a class="header__link menu-link current" href="#about-section">O nas</a>
+              <a class="header__link menu-link current" href="#about-section"
+                >O nas</a
+              >
             </li>
             <li class="menu-item">
               <a class="header__link menu-link" href="#about-section">Usługi</a>
             </li>
             <li class="menu-item">
-              <a class="header__link menu-link" href="#about-section">Kontakt</a>
+              <a class="header__link menu-link" href="#about-section"
+                >Kontakt</a
+              >
             </li>
           </ul>
         </nav>
@@ -43,12 +49,16 @@
         <!--Contacts-->
         <ul class="list contacts">
           <li class="contact-item">
-            <a class="header__link contact-link mail" href="mailto:info@devstudio.com"
+            <a
+              class="header__link contact-link mail"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="contact-item">
-            <a class="header__link contact-link phone" href="tel:+11(000)111-11-11"
+            <a
+              class="header__link contact-link phone"
+              href="tel:+11(000)111-11-11"
               >+11(000)111-11-11</a
             >
           </li>
@@ -66,7 +76,9 @@
             <nav>
               <ul class="list mobile-menu-list">
                 <li class="mobile-menu-item">
-                  <a class="header__link mobile-menu-link current" href="#about-section"
+                  <a
+                    class="header__link mobile-menu-link current"
+                    href="#about-section"
                     >O nas</a
                   >
                 </li>
@@ -86,13 +98,13 @@
           <div>
             <ul class="list mobile-contacts">
               <li class="mobile-phone-item">
-                <a class="header__link mobile-phone-link" href="tel:+11(000)111-11-11"
+                <a class="mobile-phone-link" href="tel:+11(000)111-11-11"
                   >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="mobile-mail-item">
                 <a
-                  class="header__link mobile-mail-link"
+                  class="mobile-mail-link-ft "
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -138,7 +150,8 @@
       <section class="welcome">
         <div class="container">
           <h1 class="welcome__heading">
-            Zsynchronizuj swój dom, <br> uprość swoje życie
+            Zsynchronizuj swój dom, <br />
+            uprość swoje życie
           </h1>
 
           <div class="welcome__links">
@@ -153,55 +166,99 @@
           <div class="title-wrapper">
             <h2 class="title">O Nas</h2>
             <p>
-              W HomeSync łączymy pasję z doświadczeniem, by przekształcić Twój dom w inteligentne i komfortowe miejsce. Jako zespół ekspertów w dziedzinie technologii Smart Home, oferujemy rozwiązania, które zwiększają wygodę, bezpieczeństwo i efektywność energetyczną.
-<br>
-Nasze indywidualne podejście do każdego klienta pozwala nam dostosować systemy do Twoich unikalnych potrzeb i oczekiwań. Dzięki HomeSync Twój dom stanie się bardziej funkcjonalny i nowoczesny. Pozwól nam stworzyć dla Ciebie przestrzeń, która działa w zgodzie z Twoim stylem życia.
+              W HomeSync łączymy pasję z doświadczeniem, by przekształcić Twój
+              dom w inteligentne i komfortowe miejsce. Jako zespół ekspertów w
+              dziedzinie technologii Smart Home, oferujemy rozwiązania, które
+              zwiększają wygodę, bezpieczeństwo i efektywność energetyczną.
+              <br />
+              Nasze indywidualne podejście do każdego klienta pozwala nam
+              dostosować systemy do Twoich unikalnych potrzeb i oczekiwań.
+              Dzięki HomeSync Twój dom stanie się bardziej funkcjonalny i
+              nowoczesny. Pozwól nam stworzyć dla Ciebie przestrzeń, która
+              działa w zgodzie z Twoim stylem życia.
             </p>
           </div>
           <div class="cards-wrapper">
-            <div class="card">
-              <img src="img/svg/light.svg"  alt="Oświetlenie icon" />
+            <!-- Card 1: Systemy kontroli dostępu -->
+            <div
+              class="about__card"
+              data-description="Zdalna kontrola dostępu do Twojego domu nigdy nie była prostsza. Dzięki wideodomofonom i inteligentnym zamkom możesz monitorować i zarządzać wejściem do domu za pomocą smartfona, tabletu lub panelu sterowania."
+            >
+              <img src="img/svg/light.svg" alt="Oświetlenie icon" />
               <h4>Systemy kontroli dostępu</h4>
-              <p>Zdalna kontrola dostępu do Twojego domu nigdy nie była prostsza. Dzięki wideodomofonom i inteligentnym zamkom możesz monitorować i zarządzać wejściem do domu za pomocą smartfona, tabletu lub panelu sterowania.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 2: Zarządzanie oświetleniem -->
+            <div
+              class="about__card"
+              data-description="Zainstalowane przez nas inteligentne systemy oświetleniowe dopasowują się do Twoich codziennych aktywności, zapewniając idealne warunki oświetleniowe oraz oszczędność energii."
+            >
               <img src="img/svg/light.svg" alt="Ochrona icon" />
               <h4>Zarządzanie oświetleniem</h4>
-              <p>Zainstalowane przez nas inteligentne systemy oświetleniowe dopasowują się do Twoich codziennych aktywności, zapewniając idealne warunki oświetleniowe oraz oszczędność energii.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 3: Sterowanie roletami -->
+            <div
+              class="about__card"
+              data-description="Automatyczne sterowanie roletami i żaluzjami umożliwia pełną kontrolę nad oświetleniem naturalnym w Twoim domu. Zdalnie zarządzaj dostępem światła jednym dotknięciem ekranu smartfona."
+            >
               <img src="img/svg/light.svg" alt="Ogród icon" />
               <h4>Sterowanie roletami</h4>
-              <p>Automatyczne sterowanie roletami i żaluzjami umożliwia pełną kontrolę nad oświetleniem naturalnym w Twoim domu. Zdalnie zarządzaj dostępem światła jednym dotknięciem ekranu smartfona.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 4: Ochrona przed zalaniem -->
+            <div
+              class="about__card"
+              data-description="Inteligentne czujniki monitorują 'mokre' strefy w Twoim domu, automatycznie odcinając dopływ wody w przypadku wykrycia przecieku. To szybka i skuteczna ochrona przed zalaniem."
+            >
               <img src="img/svg/light.svg" alt="Bramy i rolety icon" />
               <h4>Ochrona przed zalaniem</h4>
-              <p>Inteligentne czujniki monitorują "mokre" strefy w Twoim domu, automatycznie odcinając dopływ wody w przypadku wykrycia przecieku. To szybka i skuteczna ochrona przed zalaniem.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 5: Ochrona przed zalaniem (Advanced) -->
+            <div
+              class="about__card"
+              data-description="Zaawansowane czujniki w newralgicznych miejscach wykrywają potencjalne przecieki i automatycznie blokują dopływ wody, chroniąc Twój dom przed zalaniem."
+            >
               <img src="img/svg/light.svg" alt="Bezpieczeństwo icon" />
               <h4>Ochrona przed zalaniem</h4>
-              <p>Zaawansowane czujniki w newralgicznych miejscach wykrywają potencjalne przecieki i automatycznie blokują dopływ wody, chroniąc Twój dom przed zalaniem.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 6: Systemy audio i multiroom -->
+            <div
+              class="about__card"
+              data-description="Tworzymy inteligentne systemy audio, które rozprowadzają muzykę po całym domu. Z technologią multiroom możesz odtwarzać ulubione utwory w dowolnym pomieszczeniu, dostosowując dźwięk do każdej strefy."
+            >
               <img src="img/svg/light.svg" alt="Klimat icon" />
               <h4>Systemy audio i multiroom</h4>
-              <p>Tworzymy inteligentne systemy audio, które rozprowadzają muzykę po całym domu. Z technologią multiroom możesz odtwarzać ulubione utwory w dowolnym pomieszczeniu, dostosowując dźwięk do każdej strefy.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 7: Bezprzewodowa sieć Wi-Fi -->
+            <div
+              class="about__card"
+              data-description="Zapewniamy niezawodne, bezprzewodowe połączenie Wi-Fi w każdym zakątku domu oraz w jego otoczeniu. Dzięki naszej technologii, Twoje urządzenia Smart Home będą działać bez zakłóceń."
+            >
               <img src="img/svg/light.svg" alt="Multimedia icon" />
               <h4>Bezprzewodowa sieć Wi-Fi</h4>
-              <p>Zapewniamy niezawodne, bezprzewodowe połączenie Wi-Fi w każdym zakątku domu oraz w jego otoczeniu. Dzięki naszej technologii, Twoje urządzenia Smart Home będą działać bez zakłóceń.</p>
             </div>
-            <div class="card">
+
+            <!-- Card 8: Monitoring wideo -->
+            <div
+              class="about__card"
+              data-description="Zaawansowane systemy monitoringu wideo pozwalają na pełną kontrolę nad Twoim domem, zarówno wewnątrz, jak i na zewnątrz. Kamery zapewniają zdalny podgląd oraz nagrywanie w wysokiej jakości, chroniąc Twój dom 24/7."
+            >
               <img src="img/svg/light.svg" alt="Nastrój icon" />
               <h4>Monitoring wideo</h4>
-              <p>Zaawansowane systemy monitoringu wideo pozwalają na pełną kontrolę nad Twoim domem, zarówno wewnątrz, jak i na zewnątrz. Kamery zapewniają zdalny podgląd oraz nagrywanie w wysokiej jakości, chroniąc Twój dom 24/7.</p>
             </div>
           </div>
         </div>
-     
+
+        <!-- Modal Window -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button-ab">&times;</span>
+            <p id="modal-description"></p>
+          </div>
         </div>
       </section>
 
@@ -216,132 +273,175 @@ Nasze indywidualne podejście do każdego klienta pozwala nam dostosować system
               <img src="img/img-2.jpg" alt="img" />
               <h4>WYGODA</h4>
               <p>
-                Wychodząc z domu, nie musisz się martwić, czy wyłączyłeś światło lub odłączyłeś urządzenia od prądu — możesz sterować wszystkimi urządzeniami z telefonu, nawet będąc za granicą.
+                Wychodząc z domu, nie musisz się martwić, czy wyłączyłeś światło
+                lub odłączyłeś urządzenia od prądu — możesz sterować wszystkimi
+                urządzeniami z telefonu, nawet będąc za granicą.
               </p>
-       
             </div>
             <div class="card">
               <img src="img/img-3.jpg" alt="img" />
               <h4>KOMFORT</h4>
               <p>
-                Nie musisz szukać włącznika światła w ciemnościach — czujnik ruchu można ustawić tak, aby nocą światło włączało się delikatnie na 20% mocy, zapewniając przyjemną atmosferę.
+                Nie musisz szukać włącznika światła w ciemnościach — czujnik
+                ruchu można ustawić tak, aby nocą światło włączało się
+                delikatnie na 20% mocy, zapewniając przyjemną atmosferę.
               </p>
-          
             </div>
             <div class="card">
               <img src="img/img-4.jpg" alt="img" />
               <h4>BEZPIECZEŃSTWO</h4>
               <p>
-                Możesz otworzyć drzwi jednym dotknięciem lub zdalnie wpuścić gości do domu. System inteligentnego domu może symulować Twoją obecność, a także chronić urządzenia takie jak telewizor, lodówka czy komputer.
+                Możesz otworzyć drzwi jednym dotknięciem lub zdalnie wpuścić
+                gości do domu. System inteligentnego domu może symulować Twoją
+                obecność, a także chronić urządzenia takie jak telewizor,
+                lodówka czy komputer.
               </p>
-           
             </div>
-           
           </div>
-          
         </div>
-
-        
       </section>
 
+      <section class="smart-home">
+        <div class="container">
+          <h2 class="title-sm">Twój Inteligentny Dom – Od A do Z</h2>
+          <p>
+            Z HomeSynk Twój Inteligentny dom stanie się rzeczywistością!
+            Oferujemy pełną obsługę rozwiązań Smart Home – od projektu po
+            finalne uruchomienie, wszystko dostosowane do Twoich potrzeb. Z nami
+            zaprojektujesz, zainstalujesz i będziesz cieszysz się komfortem
+            inteligentnego domu.
+          </p>
 
-    <section class="smart-home">
-  <div class="container">
-    <h1>Inteligentny dom "pod klucz"</h1>
-    <p>Zaprojektuj, zainstaluj i ciesz się inteligentnym domem z naszą pomocą! Oferujemy kompleksowe rozwiązania Smart Home – od projektu po finalne uruchomienie, dostosowane do Twoich potrzeb.</p>
+          <div class="services">
+            <div class="service">
+              <i class="fas fa-file-alt"></i>
+              <h3>Opracowanie specyfikacji technicznej</h3>
+              <p>
+                Szczegółowa analiza Twoich potrzeb i dedykowany plan wdrożenia
+                systemu Smart Home.
+              </p>
+            </div>
 
-    <div class="services">
-      <div class="service">
-        <i class="fas fa-file-alt"></i>
-        <h2>Opracowanie specyfikacji technicznej</h2>
-        <p>Szczegółowa analiza Twoich potrzeb i dedykowany plan wdrożenia systemu Smart Home.</p>
-      </div>
+            <div class="service">
+              <i class="fas fa-drafting-compass"></i>
+              <h3>Projektowanie sieci inżynieryjnych</h3>
+              <p>
+                Dostosowanie rozwiązań Smart Home do Twojej instalacji
+                elektrycznej i systemów bezpieczeństwa.
+              </p>
+            </div>
 
-      <div class="service">
-        <i class="fas fa-drafting-compass"></i>
-        <h2>Projektowanie sieci inżynieryjnych</h2>
-        <p>Dostosowanie rozwiązań Smart Home do Twojej instalacji elektrycznej i systemów bezpieczeństwa.</p>
-      </div>
+            <div class="service">
+              <i class="fas fa-box"></i>
+              <h3>Dostawa sprzętu</h3>
+              <p>
+                Dostarczamy wysokiej jakości urządzenia, które uczynią Twój dom
+                nowoczesnym i oszczędnym.
+              </p>
+            </div>
 
-      <div class="service">
-        <i class="fas fa-box"></i>
-        <h2>Dostawa sprzętu</h2>
-        <p>Dostarczamy wysokiej jakości urządzenia, które uczynią Twój dom nowoczesnym i oszczędnym.</p>
-      </div>
+            <div class="service">
+              <i class="fas fa-tools"></i>
+              <h3>Montaż i instalacja systemu</h3>
+              <p>
+                Profesjonalny montaż komponentów systemu przez naszych
+                specjalistów.
+              </p>
+            </div>
 
-      <div class="service">
-        <i class="fas fa-tools"></i>
-        <h2>Montaż i instalacja systemu</h2>
-        <p>Profesjonalny montaż komponentów systemu przez naszych specjalistów.</p>
-      </div>
+            <div class="service">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Programowanie i uruchomienie</h3>
+              <p>
+                Konfiguracja systemu Smart Home zgodnie z Twoimi oczekiwaniami.
+              </p>
+            </div>
 
-      <div class="service">
-        <i class="fas fa-laptop-code"></i>
-        <h2>Programowanie i uruchomienie</h2>
-        <p>Konfiguracja systemu Smart Home zgodnie z Twoimi oczekiwaniami.</p>
-      </div>
+            <div class="service">
+              <i class="fas fa-cogs"></i>
+              <h3>Serwis i konserwacja</h3>
+              <p>
+                Regularna konserwacja i wsparcie techniczne, aby Twój system
+                działał bezproblemowo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div class="service">
-        <i class="fas fa-cogs"></i>
-        <h2>Serwis i konserwacja</h2>
-        <p>Regularna konserwacja i wsparcie techniczne, aby Twój system działał bezproblemowo.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="smart-control">
+        <div class="container">
+          <h2 class="title-sm">
+            Zarządzaj inteligentnym domem w najwygodniejszy sposób
+          </h2>
+          <p>
+            Dostosowany do Twoich potrzeb, zarządzaj nowoczesnym systemem
+            inteligentnego domu za pomocą innowacyjnych urządzeń.
+          </p>
 
-<section class="smart-control">
-  <div class="container">
-      <h1>Zarządzaj inteligentnym domem w najwygodniejszy sposób</h1>
-      <p>Dostosowany do Twoich potrzeb, zarządzaj nowoczesnym systemem inteligentnego domu za pomocą innowacyjnych urządzeń.</p>
-
-      <div class="service-grid">
-          <div class="service-box">
+          <div class="service-grid">
+            <div class="service-box">
               <div class="icon">
-                  <i class="fas fa-tablet-alt"></i>
+                <i class="fas fa-tablet-alt"></i>
               </div>
               <h2>Personalne gadżety do inteligentnego domu</h2>
-              <p>Nowoczesne ekrany dotykowe, które umożliwiają pełną kontrolę nad funkcjami Twojego domu. Inteligentne rozwiązania dostępne zawsze pod ręką, zarówno w wersji naściennej, jak i przenośnej.</p>
-          </div>
-          <div class="service-box">
+              <p>
+                Nowoczesne ekrany dotykowe, które umożliwiają pełną kontrolę nad
+                funkcjami Twojego domu. Inteligentne rozwiązania dostępne zawsze
+                pod ręką, zarówno w wersji naściennej, jak i przenośnej.
+              </p>
+            </div>
+            <div class="service-box">
               <div class="icon">
-                  <i class="fas fa-sliders-h"></i>
+                <i class="fas fa-sliders-h"></i>
               </div>
               <h2>Panele sterujące Smart Home</h2>
-              <p>Zastąp klasyczne włączniki eleganckimi panelami sterującymi z podświetleniem i możliwością personalizacji. Idealne do zarządzania oświetleniem, klimatyzacją i wieloma innymi funkcjami w domu.</p>
-          </div>
-          <div class="service-box">
+              <p>
+                Zastąp klasyczne włączniki eleganckimi panelami sterującymi z
+                podświetleniem i możliwością personalizacji. Idealne do
+                zarządzania oświetleniem, klimatyzacją i wieloma innymi
+                funkcjami w domu.
+              </p>
+            </div>
+            <div class="service-box">
               <div class="icon">
-                  <i class="fas fa-toggle-on"></i>
+                <i class="fas fa-toggle-on"></i>
               </div>
               <h2>Inteligentne sensory i przyciski dotykowe</h2>
-              <p>Uzyskaj pełną kontrolę nad urządzeniami w domu za pomocą prostych w obsłudze przycisków dotykowych. Inteligentne sterowanie oświetleniem, żaluzjami, temperaturą oraz innymi systemami — wszystko w zasięgu ręki.</p>
-          </div>
-          <div class="service-box">
+              <p>
+                Uzyskaj pełną kontrolę nad urządzeniami w domu za pomocą
+                prostych w obsłudze przycisków dotykowych. Inteligentne
+                sterowanie oświetleniem, żaluzjami, temperaturą oraz innymi
+                systemami — wszystko w zasięgu ręki.
+              </p>
+            </div>
+            <div class="service-box">
               <div class="icon">
-                  <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-microphone-alt"></i>
               </div>
               <h2>Sterowanie głosowe w inteligentnym domu</h2>
-              <p>Zarządzaj wszystkimi funkcjami swojego domu za pomocą komend głosowych. Integracja z asystentami głosowymi, takimi jak Google Assistant czy Alexa, ułatwia codzienne życie.</p>
+              <p>
+                Zarządzaj wszystkimi funkcjami swojego domu za pomocą komend
+                głosowych. Integracja z asystentami głosowymi, takimi jak Google
+                Assistant czy Alexa, ułatwia codzienne życie.
+              </p>
+            </div>
           </div>
-      </div>
-  </div>
-</section>
+        </div>
+      </section>
 
-
-
-      <section class="tab-section common-section">
+      <!-- <section class="tab-section common-section">
         <div class="container">
-          <!-- <div class="title-wrapper">
+          <div class="title-wrapper">
           <h3 class="title">Tab Section</h3>
           <p class="subtitle">This is some text inside of a div block.</p>
-        </div> -->
+        </div>
 
           <div class="tabs">
             <div class="tabs__nav">
               <button class="active" type="button">Usługi dla Apple iOS</button>
               <button type="button">Usługi dla Android</button>
-              <!-- <button type="button">Usługi dedykowane</button> -->
+              <button type="button">Usługi dedykowane</button>
             </div>
             <div class="tab-lists">
               <div class="tabs__item">
@@ -377,7 +477,7 @@ Nasze indywidualne podejście do każdego klienta pozwala nam dostosować system
                   Kompleksowa integracja, automatyzacja i wsparcie techniczne
                   dla systemów Gira, KNX i Z-Wave
                 </h4>
-                <!-- <div class="tabs__desc">
+                <div class="tabs__desc">
                   <p class="tabs__text">
                     Nasza firma specjalizuje się w kompleksowych usługach dla
                     inteligentnych domów, obejmujących systemy Gira, KNX i
@@ -401,15 +501,13 @@ Nasze indywidualne podejście do każdego klienta pozwala nam dostosować system
                     oczekiwaniami..
                   </p>
                   <img src="img/smart-home.png" alt="img" />
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Sekcja "Jak to działa" -->
-      <section class="how-it-works">
+      </section> -->
+      <!-- <section class="how-it-works">
         <h3 class="title title-how">Jak to działa?</h3>
         <div class="steps">
           <div class="step">
@@ -438,17 +536,15 @@ Nasze indywidualne podejście do każdego klienta pozwala nam dostosować system
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
       <div class="container footer-content-wrapper">
         <div class="footer-content-soc-wrapper">
           <div class="footer-content">
-            <a class="logo-footer footer__link" href="index.html"
-              >HOME<span class="logo-textlight">SYNK</span></a
-            >
-                   </div>
+            <a class="logo-footer" href="index.html">HOMESYNK </a>
+          </div>
 
           <div class="list footer-soc-content">
             <p class="footer-soc-text">Social media</p>
@@ -489,7 +585,9 @@ Nasze indywidualne podejście do każdego klienta pozwala nam dostosować system
           <p class="footer-form-title">Kontakt</p>
           <ul class="list mobile-contacts">
             <li class="mobile-phone-item">
-              <a class="header__link mobile-phone-link" href="tel:+11(000)111-11-11"
+              <a
+                class="header__link mobile-phone-link"
+                href="tel:+11(000)111-11-11"
                 >+11 (000) 111-11-11</a
               >
             </li>

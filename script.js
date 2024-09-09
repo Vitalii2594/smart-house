@@ -74,3 +74,33 @@ document.querySelector(".burger-menu").addEventListener("click", function () {
   this.classList.toggle("active");
   document.querySelector(".header__nav").classList.toggle("show");
 });
+
+
+
+// About us
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+  const modalDescription = document.getElementById('modal-description');
+  const closeButton = document.querySelector('.close-button');
+
+  document.querySelectorAll('.about__card').forEach(card => {
+    card.addEventListener('click', () => {
+      modalDescription.textContent = card.getAttribute('data-description');
+      modal.style.display = 'block';
+    });
+  });
+
+  closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
+
+
+

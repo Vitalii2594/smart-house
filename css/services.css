@@ -1,14 +1,22 @@
 /* Ogólne style dla sekcji */
 .smart-home {
-  background-color: #f4f4f9;
-  padding: 40px 0;
+
+  padding: 40px 10px;
+
 }
 
-.smart-home h1 {
-  text-align: center;
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
+.title-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #676770;
+  
 }
 
 .smart-home p {
@@ -29,7 +37,7 @@
 
 /* Styl dla każdej karty */
 .service {
-  background-color: white;
+  
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -83,7 +91,7 @@
 }
 
 /* Responsywność */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .services {
     grid-template-columns: repeat(2, 1fr); /* 2 kolumny na średnich ekranach */
   }
