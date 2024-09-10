@@ -17,8 +17,33 @@
   display: none !important;
 }
 
+<<<<<<< HEAD
 
 
+=======
+.title-wrapper {
+  margin-bottom: 60px;
+  padding:10px;
+}
+
+.title {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #676770;
+  padding: 0 10px;
+}
+.title-services {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+>>>>>>> 3d23f22c4a666833aa987408ff82ffcd06ccd9f3
 .subtitle {
   font-size: 17px;
   line-height: 1.2;
