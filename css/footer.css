@@ -12,17 +12,20 @@
 .footer-content {
   width: 264px;
 }
-
-
 .footer-content {
-    font-weight: 700;
-  color: rgb(23, 40, 140);
-  font-size: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+.logo-footer {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgb(105, 185, 255);
+ 
 }
 .footer-soc-text {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -34,6 +37,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+  margin-top: 30px;
 }
 
 .footer-soc-item {
@@ -75,22 +79,28 @@
 }
 
 .footer-form-title {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
 .mobile-contacts {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px ;
 }
-.mobile-phone-link, .mobile-mail-link {
-font-size: 24px;
-color: azure;
+.mobile-phone-link,
+.mobile-mail-link {
+  font-size: 24px;
+  color: azure;
 }
-
-
+.contact-details-ftr {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

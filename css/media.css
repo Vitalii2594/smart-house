@@ -10,8 +10,6 @@
 }
 
 @media screen and (max-width: 767px) {
- 
- 
   .menu {
     display: none;
   }
@@ -111,14 +109,39 @@
     text-shadow: 1px 1px 2px rgb(62, 62, 66);
   }
 
-
-
-
-
-  .services .cards-wrapper {
+ 
+  .title-wrapper {
+    max-width: 600px;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+   padding: 15px;
+   align-items: center;
+   margin-left: 80px;
+  
+  }
+  .services {
+    display: flex;
     flex-wrap: wrap;
+  }
+
+  .service{
+    width: 360px;
+    height: 180px;
+  }
+  .smart-control {
+    width: 100%;
+    padding: 60px 10px;
+    
+  }
+
+  .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-box {
+    width: 360px;
+    height: 380px;
   }
 
   .tabs__nav {
@@ -129,8 +152,7 @@
   .welcome {
     padding: 180px 0;
   }
-  
-  
+
   .footer-content-wrapper {
     padding-left: 108px;
   }
@@ -179,16 +201,13 @@
 
   .welcome {
     max-height: 800px;
-    
   }
 
   .about .about__card {
     width: 260px;
     height: 130px;
     flex-direction: row;
-   
   }
-
 
   .services .cards-wrapper {
     display: flex;

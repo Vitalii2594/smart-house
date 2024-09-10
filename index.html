@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeSync</title>
     <link rel="stylesheet" href="styles.css" />
+
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
     />
   </head>
   <body>
     <header class="page-header">
       <div class="container page-headr-container">
         <!--Навігація на інші сторінки-->
+        <a class="logo-header" href="index.html">HomeSync </a>
         <nav class="page-nav">
           <!--Логотип текстовий-->
-          <a class="logo header__link logo-header" href="index.html"
-            >Home<span class="logo-textdark">Sync</span>
-          </a>
+          
           <ul class="list menu">
             <li class="menu-item">
               <a class="header__link menu-link current" href="#about-section"
@@ -66,13 +66,13 @@
       </div>
       <!-- MOBILE MENU -->
       <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-menu-close-btn js-close-menu">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./img/icons.svg#icon-close-modalsvg"></use>
+          </svg>
+        </button>
         <div class="container mobile-menu-container">
-          <div>
-            <button class="mobile-menu-close-btn js-close-menu">
-              <svg class="mobile-menu-close-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-close-modalsvg"></use>
-              </svg>
-            </button>
+          <div class="mob-menu-nav">
             <nav>
               <ul class="list mobile-menu-list">
                 <li class="mobile-menu-item">
@@ -96,18 +96,15 @@
             </nav>
           </div>
           <div>
-            <ul class="list mobile-contacts">
-              <li class="mobile-phone-item">
-                <a class="mobile-phone-link" href="tel:+11(000)111-11-11"
-                  >+11 (000) 111-11-11</a
-                >
+         
+            <ul class="contact-details">
+              <li class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+48123456789">+48 123 456 789</a>
               </li>
-              <li class="mobile-mail-item">
-                <a
-                  class="mobile-mail-link-ft "
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:kontakt@homesync.pl">kontakt@homesync.pl</a>
               </li>
             </ul>
 
@@ -170,7 +167,6 @@
               dom w inteligentne i komfortowe miejsce. Jako zespół ekspertów w
               dziedzinie technologii Smart Home, oferujemy rozwiązania, które
               zwiększają wygodę, bezpieczeństwo i efektywność energetyczną.
-              <br />
               Nasze indywidualne podejście do każdego klienta pozwala nam
               dostosować systemy do Twoich unikalnych potrzeb i oczekiwań.
               Dzięki HomeSync Twój dom stanie się bardziej funkcjonalny i
@@ -183,8 +179,9 @@
             <div
               class="about__card"
               data-description="Zdalna kontrola dostępu do Twojego domu nigdy nie była prostsza. Dzięki wideodomofonom i inteligentnym zamkom możesz monitorować i zarządzać wejściem do domu za pomocą smartfona, tabletu lub panelu sterowania."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Oświetlenie icon" />
+              <i class="fas fa-door-closed"></i>
               <h4>Systemy kontroli dostępu</h4>
             </div>
 
@@ -192,8 +189,9 @@
             <div
               class="about__card"
               data-description="Zainstalowane przez nas inteligentne systemy oświetleniowe dopasowują się do Twoich codziennych aktywności, zapewniając idealne warunki oświetleniowe oraz oszczędność energii."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Ochrona icon" />
+              <i class="fas fa-lightbulb"></i>
               <h4>Zarządzanie oświetleniem</h4>
             </div>
 
@@ -201,8 +199,9 @@
             <div
               class="about__card"
               data-description="Automatyczne sterowanie roletami i żaluzjami umożliwia pełną kontrolę nad oświetleniem naturalnym w Twoim domu. Zdalnie zarządzaj dostępem światła jednym dotknięciem ekranu smartfona."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Ogród icon" />
+              <i class="fas fa-window-restore"></i>
               <h4>Sterowanie roletami</h4>
             </div>
 
@@ -210,44 +209,39 @@
             <div
               class="about__card"
               data-description="Inteligentne czujniki monitorują 'mokre' strefy w Twoim domu, automatycznie odcinając dopływ wody w przypadku wykrycia przecieku. To szybka i skuteczna ochrona przed zalaniem."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Bramy i rolety icon" />
+              <i class="fas fa-water"></i>
               <h4>Ochrona przed zalaniem</h4>
             </div>
 
-            <!-- Card 5: Ochrona przed zalaniem (Advanced) -->
-            <div
-              class="about__card"
-              data-description="Zaawansowane czujniki w newralgicznych miejscach wykrywają potencjalne przecieki i automatycznie blokują dopływ wody, chroniąc Twój dom przed zalaniem."
-            >
-              <img src="img/svg/light.svg" alt="Bezpieczeństwo icon" />
-              <h4>Ochrona przed zalaniem</h4>
-            </div>
-
-            <!-- Card 6: Systemy audio i multiroom -->
+            <!-- Card 5: Systemy audio i multiroom -->
             <div
               class="about__card"
               data-description="Tworzymy inteligentne systemy audio, które rozprowadzają muzykę po całym domu. Z technologią multiroom możesz odtwarzać ulubione utwory w dowolnym pomieszczeniu, dostosowując dźwięk do każdej strefy."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Klimat icon" />
+              <i class="fas fa-music"></i>
               <h4>Systemy audio i multiroom</h4>
             </div>
 
-            <!-- Card 7: Bezprzewodowa sieć Wi-Fi -->
+            <!-- Card 6: Bezprzewodowa sieć Wi-Fi -->
             <div
               class="about__card"
               data-description="Zapewniamy niezawodne, bezprzewodowe połączenie Wi-Fi w każdym zakątku domu oraz w jego otoczeniu. Dzięki naszej technologii, Twoje urządzenia Smart Home będą działać bez zakłóceń."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Multimedia icon" />
+              <i class="fas fa-wifi"></i>
               <h4>Bezprzewodowa sieć Wi-Fi</h4>
             </div>
 
-            <!-- Card 8: Monitoring wideo -->
+            <!-- Card 7: Monitoring wideo -->
             <div
               class="about__card"
               data-description="Zaawansowane systemy monitoringu wideo pozwalają na pełną kontrolę nad Twoim domem, zarówno wewnątrz, jak i na zewnątrz. Kamery zapewniają zdalny podgląd oraz nagrywanie w wysokiej jakości, chroniąc Twój dom 24/7."
+              onclick="openModal(this)"
             >
-              <img src="img/svg/light.svg" alt="Nastrój icon" />
+              <i class="fas fa-video"></i>
               <h4>Monitoring wideo</h4>
             </div>
           </div>
@@ -256,7 +250,7 @@
         <!-- Modal Window -->
         <div id="modal" class="modal">
           <div class="modal-content">
-            <span class="close-button-ab">&times;</span>
+            <span class="close-button-ab" onclick="closeModal()">&times;</span>
             <p id="modal-description"></p>
           </div>
         </div>
@@ -264,9 +258,7 @@
 
       <section class="comfort__services common-section common-section--dark">
         <div class="container">
-          <div class="title-wrapper">
-            <h3 class="title-services">Usługi</h3>
-          </div>
+          <h3 class="title-comforts">Inteligentny Dom</h3>
 
           <div class="cards-wrapper">
             <div class="card">
@@ -537,6 +529,25 @@
           </div>
         </div>
       </section> -->
+
+      <!-- <section class="contact-section common-section">
+        <div class="contact-container">
+          <p>
+            Skontaktuj się z nami, aby dowiedzieć się więcej o naszych usługach
+            Smart Home:
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+48123456789">+48 123 456 789</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:kontakt@homesync.pl">kontakt@homesync.pl</a>
+            </div>
+          </div>
+        </div>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -582,21 +593,17 @@
         </div>
 
         <div class="footer-container-form">
-          <p class="footer-form-title">Kontakt</p>
-          <ul class="list mobile-contacts">
-            <li class="mobile-phone-item">
-              <a
-                class="header__link mobile-phone-link"
-                href="tel:+11(000)111-11-11"
-                >+11 (000) 111-11-11</a
-              >
+          <p class="footer-form-title">
+            Kontakt
+          </p>
+          <ul class="contact-details-ftr">
+            <li class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+48123456789">+48 123 456 789</a>
             </li>
-            <li class="mobile-mail-item">
-              <a
-                class="footer__link mobile-mail-link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:kontakt@homesync.pl">kontakt@homesync.pl</a>
             </li>
           </ul>
         </div>

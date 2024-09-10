@@ -1,45 +1,90 @@
-/* Styles for the cards */
-.about .cards-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 15px;
-}
-
-.about .about__card {
-  width: 160px;
-  height: 150px;
-  padding: 10px;
-  border: 1px solid #dcebf7;
-  border-radius: 8px;
+.title {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #676770;
   text-align: center;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
-  cursor: pointer;
+  padding-top: 40px;
+}
+.cards-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;  
+  
+
+}
+.about {
+  padding-bottom: 40px;
+   
+}
+.about p {
+  text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+   
 }
 
-.about .about__card:hover {
-  background-color: #f0f8ff;
-  transform: scale(1.05);
+
+.about__card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 200px;
+  height: 120px;
 }
 
-.about .about__card img {
-  width: 40px;
-  height: 40px;
+.about__card i {
+  font-size: 2rem;
+  color: #007bff;
   margin-bottom: 10px;
 }
 
-.about .about__card h4 {
-  font-size: 12px;
-  color: #676770;
-  text-transform: uppercase;
-  margin: 0;
+.about__card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.info-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info-modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.info-close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-close-button:hover,
+.info-close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Modal styles */
@@ -47,35 +92,34 @@
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  left: 40px;
+  top: 90px;
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #fffffff7;
   margin: 15% auto;
-  padding: 20px;
+  padding: 70px 50px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 1500px;
-  max-height: 1500px;
+  width: 400px;
+  height: 300px;
   border-radius: 8px;
   position: relative;
   text-align: center;
+  font-size: 18px;
 }
 
 .close-button-ab {
-  color: #aaa;
+  color: #636363;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
+ 
 }
 
 .close-button:hover,

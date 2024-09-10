@@ -1,3 +1,5 @@
+
+
 .comfort__services .cards-wrapper {
     display: flex;
    gap: 30px  ;
@@ -5,6 +7,16 @@
    margin: 0 auto;
   
   }
+
+  .title-comforts {
+    font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
   .card {
     box-shadow: rgba(26, 1, 54, 0.12) 0px 9px 22px 0px;
     border: none;

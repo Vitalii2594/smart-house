@@ -7,6 +7,7 @@
 @import url(./css/about.css);
 @import url(./css/comfort-services.css);
 @import url(./css//services.css);
+@import url(./css/contacts.css);
 
 @import url(./css/footer.css);
 
@@ -16,26 +17,8 @@
   display: none !important;
 }
 
-.title-wrapper {
-  margin-bottom: 60px;
-}
 
-.title {
-  margin-bottom: 17px;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #676770;
-}
-.title-services {
-  margin-bottom: 17px;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+
 .subtitle {
   font-size: 17px;
   line-height: 1.2;
@@ -44,13 +27,10 @@
   color: #8e8e9c;
 }
 
-.common-section {
-  text-align: center;
-  padding: 60px 0;
-}
 
 .common-section--dark {
   background-color: #192024;
+  padding-bottom: 60px;
 }
 
 .common-section--dark h4 {
@@ -61,11 +41,7 @@
   color: #e8e8e8;
 }
 
-/* ------------ WELCOME ------------ */
 
-/* ------------ ABOUT (WHAT WE DO) ------------ */
-
-/* ------------ SERVICES ------------ */
 
 /* ------------ TABS ------------ */
 .tabs__nav {
