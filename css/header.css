@@ -80,7 +80,7 @@ padding-bottom: 10px;
   transition-property: opacity, visibility;
   transition-duration: var(--tra-dur);
   transition-timing-function: var(--tra-tim-fun);
-  padding: 20px 15px;
+
 }
 
 .is-open {
