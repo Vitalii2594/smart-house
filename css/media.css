@@ -1,8 +1,8 @@
 /*============== MOBILE ======= */
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 375px) {
   .container {
-    width: 428px;
+    width: 375px;
     padding-left: 16px;
     padding-right: 16px;
   }
