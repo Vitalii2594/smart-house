@@ -56,9 +56,6 @@ padding-bottom: 10px;
   color: var(--navigation-active);
 }
 
-.menu-link.current {
-  color: var(--navigation-active);
-}
 
 /* ==== MOBILE MENU ===== */
 
