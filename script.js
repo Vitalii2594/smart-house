@@ -1,31 +1,23 @@
-// Heaader
-(() => {
-  const mobileMenu = document.querySelector(".js-menu-container");
-  const openMenuBtn = document.querySelector(".js-open-menu");
-  const closeMenuBtn = document.querySelector(".js-close-menu");
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
-    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
-    mobileMenu.classList.toggle("is-open");
-    const scrollLockMethod = !isMenuOpen
-      ? "disableBodyScroll"
-      : "enableBodyScroll";
-    bodyScrollLock[scrollLockMethod](document.body);
-  };
-  openMenuBtn.addEventListener("click", toggleMenu);
-  closeMenuBtn.addEventListener("click", toggleMenu);
+// Obsługa kliknięcia burger menu
+document.querySelector('.burger').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.burger-menu-overlay').classList.toggle('active');
+});
 
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia("(min-width: 1279px)").addEventListener("change", (e) => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove("is-open");
-    openMenuBtn.setAttribute("aria-expanded", false);
-    bodyScrollLock.enableBodyScroll(document.body);
+// Obsługa kliknięcia przycisku zamknięcia
+document.querySelector('.close-btn').addEventListener('click', function() {
+  document.querySelector('.burger').classList.remove('active');
+  document.querySelector('.burger-menu-overlay').classList.remove('active');
+});
+
+// Zamknięcie menu po kliknięciu w link
+document.querySelectorAll('.burger-menu ul li a').forEach(link => {
+  link.addEventListener('click', function() {
+      document.querySelector('.burger').classList.remove('active');
+      document.querySelector('.burger-menu-overlay').classList.remove('active');
   });
-})();
+});
+
 
 // TABS
 const tabsBtns = document.querySelectorAll(".tabs__nav button");
@@ -75,19 +67,14 @@ document.querySelector(".burger-menu").addEventListener("click", function () {
   document.querySelector(".header__nav").classList.toggle("show");
 });
 
-
-
 // About us
 
 function openModal(element) {
-  var description = element.getAttribute('data-description');
-  document.getElementById('modal-description').textContent = description;
-  document.getElementById('modal').style.display = 'block';
+  var description = element.getAttribute("data-description");
+  document.getElementById("modal-description").textContent = description;
+  document.getElementById("modal").style.display = "block";
 }
 
 function closeModal() {
-  document.getElementById('modal').style.display = 'none';
+  document.getElementById("modal").style.display = "none";
 }
-
-
-

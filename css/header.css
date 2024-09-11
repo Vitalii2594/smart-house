@@ -1,239 +1,122 @@
-.page-header {
-  position: fixed;
-  z-index: 3;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
-padding-top: 10px;
-padding-bottom: 10px;
+.header {
+  background-color: #333; /* Kolor tła nagłówka */
+  color: #fff; /* Kolor tekstu */
+  position: fixed; /* Nagłówek jest przyklejony do góry */
+  top: 0;
+  left: 0;
+  width: 100%; /* Nagłówek zajmuje całą szerokość */
+  z-index: 1000; /* Nagłówek jest zawsze nad innymi elementami */
+  padding: 10px 0; /* Odstęp wewnętrzny od góry i dołu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.logo-header {
+
+.header__pg {
+  display: flex; /* Użycie flexboxa do wyrównania elementów */
+  justify-content: space-between; /* Elementy są rozstawione między sobą */
+  align-items: center; /* Wyrównanie elementów do środka w osi pionowej */
+  padding: 0 16px; /* Odstęp wewnętrzny po bokach */
+  width: 100%;
+  max-width: 1199px; /* Maksymalna szerokość dla urządzeń do 1199px */
+  margin: 0 auto; /* Wycentrowanie kontenera */
+  
+}
+
+.logo a {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgb(105, 185, 255);
-  padding-right: 185px;
-  padding-left: 20px;
-}
-.page-headr-container {
-  display: flex;
-  align-items: center;
 }
 
-.page-nav {
-  display: flex;
-  align-items: center;
+.nav {
+  display: none; /* Ukrycie nawigacji na małych i średnich ekranach */
 }
 
-.menu {
-  display: flex;
-  align-items: center;
+.contact-icons {
+  display: none; /* Ukrycie ikonek kontaktowych na małych i średnich ekranach */
 }
 
-.menu-item {
-  position: relative;
+/* Styl dla burger menu */
+.burger {
+  display: flex; /* Wyświetlenie burger menu jako flex */
+  flex-direction: column; /* Pionowe ułożenie pasków burgera */
+  gap: 5px; /* Odstęp pomiędzy paskami */
+  cursor: pointer; /* Ikona zmienia się w kursor */
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 40px;
+.burger span {
+  width: 30px; /* Szerokość pasków burgera */
+  height: 3px; /* Wysokość pasków burgera */
+  background-color: white; /* Kolor pasków */
+  display: block; /* Każdy pasek jest blokiem */
 }
 
-.menu-link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-  transition-property: color;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-  display: block;
-  padding: 23px 0;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--navigation-active);
-}
-
-.menu-link.current {
-  color: var(--navigation-active);
-}
-
-/* ==== MOBILE MENU ===== */
-
-.mobile-menu-open {
-  background-color: transparent;
-  border: none;
-  line-height: 0;
-}
-
-.mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  z-index: 1000;
+/* Modalne menu */
+.burger-menu-overlay {
+  display: none; /* Ukrycie modalnego menu domyślnie */
+  position: fixed; /* Modalne menu jest przyklejone do ekranu */
   top: 0;
   left: 0;
-  background-color: var(--white-text-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition-property: opacity, visibility;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-  padding: 20px 15px;
-}
-
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.mobile-menu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  position: relative;
-  padding: 20px;
   width: 100%;
-}
-.mob-menu-nav {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.mobile-menu-close-btn {
-  position: absolute;
-  top: 41px;
-  right: 40px;
-  display: flex;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Ciemne tło z przezroczystością */
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Modal jest nad wszystkimi elementami */
 }
 
-.mobile-menu-item {
+.burger-menu {
+  background-color: #333; /* Kolor tła modalnego menu */
+  padding: 30px;
+  text-align: center;
+  width: 90%; /* Szerokość modalnego menu */
+  max-width: 600px; /* Maksymalna szerokość modalnego okna */
+  border-radius: 8px; /* Zaokrąglenie krawędzi */
+}
+
+.burger-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-.mobile-menu-link {
+.burger-menu-header .logo a {
+  font-size: 25px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-  outline: none;
-  transition-property: color;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgb(105, 185, 255);
 }
 
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
-  color: #007bff;
+.burger-menu-header .close-btn {
+  cursor: pointer; /* Ikona zamknięcia zmienia się w kursor */
+  color: white;
+  font-size: 24px; /* Wielkość ikony zamknięcia */
 }
 
-.mobile-menu-link.current {
-  color: #007bff;
+.burger-menu ul {
+  list-style: none; /* Usunięcie kropek z listy */
+  margin-bottom: 20px;
 }
 
-/* mobile menu contacts */
+.burger-menu ul li {
+  margin-bottom: 15px;
+}
 
-.mobile-phone-item {
+.burger-menu ul li a {
+  color: white; /* Kolor tekstu w modalnym menu */
+  text-decoration: none; /* Usunięcie podkreślenia */
+  font-size: 18px; /* Wielkość czcionki */
+}
+
+.burger-menu .contact-icons {
   display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.1;
-  margin-bottom: 40px;
-  color: var(--primary-brand);
-}
-
-.mobile-mail-link {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--text);
-  transition-property: color;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-}
-
-.mobile-mail-link:hover,
-.mobile-mail-link:focus {
-  color: var(--navigation-active);
-}
-
-/* mobile menu soc list */
-.mobile-soc-list {
-  display: flex;
-  margin-top: 60px;
-  gap: 35px;
   justify-content: center;
-  padding-top: 60px;
-}
-
-.mobile-soc-item {
-  width: 40px;
-  height: 40px;
-}
-
-.mobile-soc-link {
-  width: 100%;
-  height: 100%;
-  background-color: #007bff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: background-color;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-}
-
-.mobile-soc-icon {
-  fill: var(--white-text-color);
-  transition-property: fill;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-}
-
-.mobile-soc-link:hover,
-.mobile-soc-link:focus {
-  background-color: var(--navigation-active);
-}
-
-.mobile-soc-link .mobile-soc-icon:hover,
-.mobile-soc-link .mobile-soc-icon:focus {
-  fill: var(--light);
-}
-
-/* ==== /MOBILE MENU ===== */
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  text-align: right;
-}
-.mobile-contact-link {
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text);
-  transition-property: color;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-}
-
-.mobiel-contact-link:hover,
-.mobile-contact-link:focus {
-  color: var(--navigation-active);
+  gap: 20px; /* Odstępy pomiędzy ikonami */
 }

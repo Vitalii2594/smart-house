@@ -13,132 +13,57 @@
     />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container page-headr-container">
-        <!--Навігація на інші сторінки-->
-        <a class="logo-header" href="index.html">HomeSync </a>
-        <nav class="page-nav">
-          <!--Логотип текстовий-->
 
-          <ul class="list menu">
-            <li class="menu-item">
-              <a class="header__link menu-link current" href="#about-section"
-                >O nas</a
-              >
-            </li>
-            <li class="menu-item">
-              <a class="header__link menu-link" href="#smart-home">Usługi</a>
-            </li>
-            <li class="menu-item">
-              <a class="header__link menu-link" href="#footer-pg">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="mobile-menu-open js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="mobile-menu-open_icon" width="32" height="22">
-            <use href="./img/icons.svg#icon-menu-burger"></use>
-          </svg>
-        </button>
-        <!--Contacts-->
-        <ul class="list contacts">
-          <li class="contact-item">
-            <a
-              class="header__link contact-link mail"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item">
-            <a
-              class="header__link contact-link phone"
-              href="tel:+11(000)111-11-11"
-              >+11(000)111-11-11</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- MOBILE MENU -->
-      <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <button class="mobile-menu-close-btn js-close-menu">
-          <svg class="mobile-menu-close-icon" width="8" height="8">
-            <use href="./img/icons.svg#icon-close-modalsvg"></use>
-          </svg>
-        </button>
-        <div class="container mobile-menu-container">
-          <div class="mob-menu-nav">
-            <nav>
-              <ul class="list mobile-menu-list">
-                <li class="mobile-menu-item">
-                  <a
-                    class="header__link mobile-menu-link current"
-                    href="#about-section"
-                    >O nas</a
-                  >
-                </li>
-                <li class="mobile-menu-item">
-                  <a class="header__link mobile-menu-link" href="#smart-home"
-                    >Usługi</a
-                  >
-                </li>
-                <li class="mobile-menu-item">
-                  <a class="header__link mobile-menu-link" href="#footer-pg"
-                    >Kontakt</a
-                  >
-                </li>
+    <header class="header">
+      <div class="container header__pg">
+          <div class="logo">
+              <a href="#">HomeSync</a>
+          </div>
+  
+          <nav class="nav">
+              <ul class="nav__lists">
+                  <li><a class="nav-link" href="#about-section">O nas</a></li>
+                  <li><a class="nav-link" href="#smart-home-pg">Usługi</a></li>
+                  <li><a class="nav-link" href="#footer-pg">Kontakt</a></li>
               </ul>
-            </nav>
+          </nav>
+  
+          <div class="contact-icons">
+              <a href="mailto:kontakt@example.com" class="icon"><i class="fas fa-envelope"></i></a>
+              <a href="tel:+48123456789" class="icon"><i class="fas fa-phone"></i></a>
           </div>
-          <div>
-            <ul class="contact-details">
-              <li class="contact-item">
-                <i class="fas fa-phone-alt"></i>
-                <a href="tel:+48123456789">+48 123 456 789</a>
-              </li>
-              <li class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:kontakt@homesync.pl">kontakt@homesync.pl</a>
-              </li>
-            </ul>
-
-            <ul class="mobile-soc-list list">
-              <li class="mobile-soc-item">
-                <a href="" class="mobile-soc-link header__link">
-                  <svg class="mobile-soc-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-instagramsvg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-soc-item">
-                <a href="" class="mobile-soc-link header__link">
-                  <svg class="mobile-soc-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-twittersvg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-soc-item">
-                <a href="" class="mobile-soc-link header__link">
-                  <svg class="mobile-soc-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-facebooksvg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-soc-item">
-                <a href="" class="mobile-soc-link header__link">
-                  <svg class="mobile-soc-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-linkedinsvg"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+  
+          <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
           </div>
-        </div>
+  
+          <!-- Modal menu for mobile -->
+          <div class="burger-menu-overlay">
+              <div class="burger-menu">
+                  <div class="burger-menu-header">
+                      <div class="logo">
+                          <a href="#">HomeSync</a>
+                      </div>
+                      <div class="close-btn"><i class="fas fa-times"></i></div>
+                  </div>
+  
+                  <ul>
+                      <li><a href="#about-section">O nas</a></li>
+                      <li><a href="#smart-home-pg">Usługi</a></li>
+                      <li><a href="#footer-pg">Kontakt</a></li>
+                  </ul>
+  
+                  <div class="contact-icons">
+                      <a href="mailto:kontakt@example.com" class="icon"><i class="fas fa-envelope"></i></a>
+                      <a href="tel:+48123456789" class="icon"><i class="fas fa-phone"></i></a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </header>
+  </header>
+  
 
     <main id="main" class="main">
       <section class="welcome">
@@ -149,8 +74,8 @@
           </h1>
 
           <div class="welcome__links">
-            <a href="#smart-home" class="link">Zobacz nasze usługi</a>
-            <a href="#footer-pg" class="link">Umów się na konsultację</a>
+            <a href="#smart-home" class="welcome__link">Zobacz nasze usługi</a>
+            <a href="#footer-pg" class="welcome__link">Umów się na konsultację</a>
           </div>
         </div>
       </section>
@@ -290,7 +215,7 @@
         </div>
       </section>
 
-      <section id="smart-home" class="smart-home">
+      <section id="smart-home-pg" class="smart-home">
         <div class="container">
           <h2 class="title-sm">Twój Inteligentny Dom – Od A do Z</h2>
           <p>

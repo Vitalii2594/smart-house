@@ -1,6 +1,6 @@
 .footer {
   background-color: #192024;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 40px;
   margin: 0 auto;
 }
@@ -10,11 +10,11 @@
 }
 
 .footer-content {
-  width: 264px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
-.footer-content {
-  padding-bottom: 40px;
-}
+
 .logo-footer {
   font-size: 25px;
   font-weight: 700;
@@ -24,9 +24,11 @@
  
 }
 .footer-soc-content {
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .footer-soc-text {
+  display: flex;
+  justify-content: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
@@ -78,10 +80,16 @@
 }
 
 .footer-container-form {
-  margin-left: auto;
+ margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .footer-form-title {
+  display: flex;
+  justify-content: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
