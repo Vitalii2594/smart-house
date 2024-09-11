@@ -12,12 +12,12 @@ padding-bottom: 10px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgb(105, 185, 255);
-  padding-right: 165px;
   padding-left: 20px;
 }
 .page-headr-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .page-nav {
