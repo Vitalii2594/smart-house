@@ -53,24 +53,3 @@
     color: #0056b3;
   }
   
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .contact-container {
-      max-width: 728px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .contact-container {
-      max-width: 428px;
-    }
-  
-    .contact-item {
-      font-size: 18px;
-    }
-  
-    .contact-item i {
-      font-size: 30px;
-    }
-  }
-  

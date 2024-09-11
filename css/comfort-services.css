@@ -1,56 +1,98 @@
+.hide {
+  display: none !important;
+}
 
+.title-wrapper {
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+.title {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #676770;
+  padding: 0 10px;
+}
+.title-services {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subtitle {
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8e8e9c;
+}
+
+.common-section--dark {
+  background-color: #192024;
+  padding-top: 40px;
+}
+
+.common-section--dark h4 {
+  color: #000000;
+  font-weight: 600;
+}
+.common-section--dark .subtitle {
+  color: #e8e8e8;
+}
 
 .comfort__services .cards-wrapper {
-    display: flex;
-   gap: 30px  ;
-   flex-wrap: wrap;
-   margin: 0 auto;
-  
-  }
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
 
-  .title-comforts {
-    font-size: 30px;
+.title-comforts {
+  font-size: 30px;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   padding-bottom: 40px;
-  padding-top: 40px;
 }
-  .card {
-    box-shadow: rgba(26, 1, 54, 0.12) 0px 9px 22px 0px;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    max-width: 360px;
-  
-   
-    box-sizing: border-box;
-    position: relative;
-    margin: 0 auto;
-    padding: 25px 25px;
-  
-  }
-  .comfort__services .card img {
-    margin-bottom: 20px;
-    max-width: 320px;
-    height: 180px;
-    border-radius: 10px;
-  }
-  
-  .comfort__services .card h4 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-  }
-  
-  .comfort__services .link {
-    margin-top: 15px;
-    margin-bottom: 50px;
-  }
+.card {
+  box-shadow: rgba(26, 1, 54, 0.12) 0px 9px 22px 0px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  max-width: 360px;
+
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 25px;
+}
+.comfort__services .card img {
+  margin-bottom: 20px;
+  max-width: 320px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.comfort__services .card h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.comfort__services .link {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}

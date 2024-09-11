@@ -1,11 +1,10 @@
 /*============== MOBILE ======= */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
   .container {
     width: 428px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -24,10 +23,6 @@
 
   .footer-description {
     text-align: start;
-  }
-
-  .footer-soc-content {
-    margin-bottom: 72px;
   }
 
   .footer-content-wrapper {
@@ -54,141 +49,116 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
   }
 
   .page-header {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .logo {
-    margin-right: 120px;
-  }
-
-  .mobile-menu-open {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-  .contact-link {
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: var(--text);
-    transition-property: color;
-    transition-duration: var(--tra-dur);
-    transition-timing-function: var(--tra-tim-fun);
-  }
-
-  .contact-link:hover,
-  .contact-link:focus {
-    color: var(--navigation-active);
-  }
-
-  .menu-link.current::after {
-    display: block;
-    content: "";
-    background-color: #404bbf;
     width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
+  }
+  .page-headr-container {
+    justify-content: space-between;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 84px;
+    top: 90px;
   }
 
-  .welcome__heading {
-    margin-bottom: 100px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.3;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #ffffffe5;
-    text-shadow: 1px 1px 2px rgb(62, 62, 66);
+  .modal-content {
+    background-color: #fffffff7;
+    margin: 15% auto;
+    padding: 50px 50px;
+    border: 1px solid #888;
+
+    width: 600px;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
   }
 
- 
-  .title-wrapper {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-   padding: 15px;
-   align-items: center;
-   margin-left: 80px;
-  
+  .card {
+    max-width: 350px;
   }
+
   .services {
     display: flex;
     flex-wrap: wrap;
-  }
+    gap: 20px;
 
-  .service{
-    width: 360px;
-    height: 180px;
+    justify-content: center;
   }
-  .smart-control {
-    width: 100%;
-    padding: 60px 10px;
-    
+  .service {
+    width: 350px;
   }
 
   .service-grid {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
-
   .service-box {
-    width: 360px;
-    height: 380px;
+    width: 350px;
+    margin-bottom: 0;
   }
-
-  .tabs__nav {
-    flex-direction: row;
+  .footer-content {
+    width: 768px;
+  }
+  .logo-footer {
+    display: flex;
     justify-content: center;
   }
-
-  .welcome {
-    padding: 180px 0;
-  }
-
-  .footer-content-wrapper {
-    padding-left: 108px;
-  }
-
-  .footer-content-soc-wrapper {
+  .footer-form-title {
     display: flex;
-    gap: 24px;
-    text-align: left;
+    justify-content: center;
   }
-
-  .footer-soc-content {
-    margin-left: 0;
-  }
-
-  .footer-form {
+  .footer-soc-text {
     display: flex;
-    gap: 24px;
-  }
-
-  .footer-form-input {
-    width: 264px;
-    margin-bottom: 0;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
-    padding: 0 15px;
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
   }
 
   .logo {
     margin-right: 76px;
     line-height: 1.33;
   }
+  .mobile-menu-open {
+    display: none;
+  }
 
+  .logo-header {
+    padding-right: 80px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .contacts {
+    display: flex;
+  }
   .contacts {
     display: flex;
     align-items: center;
@@ -208,26 +178,45 @@
     height: 130px;
     flex-direction: row;
   }
-
-  .services .cards-wrapper {
+  .service-grid {
     display: flex;
-    gap: 20px;
-  }
-  .steps {
     flex-direction: row;
+    gap: 20px;
     justify-content: center;
   }
-  .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .service-box {
+    width: 280px;
+    margin-bottom: 0;
   }
-
+ 
   .footer-content-wrapper {
     display: flex;
-    padding-left: 15px;
+    flex-wrap: wrap;
+    gap: 40PX ;
   }
-
-  .footer-content-soc-wrapper {
-    gap: 120px;
+  .footer-content {
+    width: 100%;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    
+  }
+  .contact-details-ftr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20PX ;
+  }
+  .footer-soc-content {
+    margin-top: 0;
+    padding-left: 200px;
   }
 }

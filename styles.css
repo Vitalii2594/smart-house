@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(./css/reset.css);
 @import url(./css/base.css);
 @import url(./css/header.css);
@@ -13,58 +13,6 @@
 
 @import url(./css/media.css);
 
-.hide {
-  display: none !important;
-}
-
-<<<<<<< HEAD
-
-
-=======
-.title-wrapper {
-  margin-bottom: 60px;
-  padding:10px;
-}
-
-.title {
-  margin-bottom: 17px;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #676770;
-  padding: 0 10px;
-}
-.title-services {
-  margin-bottom: 17px;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
->>>>>>> 3d23f22c4a666833aa987408ff82ffcd06ccd9f3
-.subtitle {
-  font-size: 17px;
-  line-height: 1.2;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #8e8e9c;
-}
-
-
-.common-section--dark {
-  background-color: #192024;
-  padding-bottom: 60px;
-}
-
-.common-section--dark h4 {
-  color: #000000;
-  font-weight: 600;
-}
-.common-section--dark .subtitle {
-  color: #e8e8e8;
-}
 
 
 

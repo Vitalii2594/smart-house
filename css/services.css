@@ -1,22 +1,14 @@
-/* Ogólne style dla sekcji */
 .smart-home {
-
-  padding: 40px 10px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-
 .title-sm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 17px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 24px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #676770;
   text-align: center;
+  color: #676770;
+  padding-bottom: 40px;
 }
 
 .smart-home p {
@@ -28,16 +20,13 @@
 
 /* Układ siatki: 3 kolumny na większych ekranach */
 .services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolumny */
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+
+   gap: 20px;
+  
 }
 
 /* Styl dla każdej karty */
 .service {
-  
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -67,8 +56,14 @@
 }
 
 /* Styl tekstu */
+.service h3 {
+  font-size: 18px;
+  color: color #333;
+  padding-bottom: 10px;
+}
+
 .service p {
-  font-size: 14px;
+  font-size: 16px;
   color: #777;
   line-height: 1.6;
 }
@@ -90,49 +85,30 @@
   color: white;
 }
 
-/* Responsywność */
-@media (max-width: 1200px) {
-  .services {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumny na średnich ekranach */
-  }
-}
-
-@media (max-width: 768px) {
-  .services {
-    grid-template-columns: 1fr; /* 1 kolumna na małych ekranach */
-  }
-}
-
-/* smart-control */
+/* SMART_CONTROL_SECTION */
 
 /* Stylizacja sekcji głównej */
 .smart-control {
-  padding: 60px 20px;
-  background-color: white;
+ background-color: #192024;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-
-.smart-control h1 {
+.title-sm-ctr{
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
+  color: #ffffff;
+  padding-bottom: 40px;
 }
-
 .smart-control p {
-  text-align: center;
+    text-align: center;
   font-size: 18px;
   color: #555;
   margin-bottom: 40px;
 }
 
 /* Układ siatki dla usług */
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 kolumny */
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 /* Styl dla każdej karty usługi */
 .service-box {
@@ -143,6 +119,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   color: #333;
+   margin-bottom: 30px;
+  
 }
 
 .service-box:hover {
@@ -169,11 +147,4 @@
   font-size: 16px;
   color: #666;
   line-height: 1.6;
-}
-
-/* Responsywność dla mniejszych ekranów */
-@media (max-width: 768px) {
-  .service-grid {
-    grid-template-columns: 1fr; /* 1 kolumna na małych ekranach */
-  }
 }

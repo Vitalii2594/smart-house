@@ -6,28 +6,22 @@
   text-transform: uppercase;
   color: #676770;
   text-align: center;
-  padding-top: 40px;
 }
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;  
-  
-
+  justify-content: center;
+  gap: 15px;
 }
 .about {
   padding-bottom: 40px;
-   
 }
 .about p {
   text-align: center;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-    max-width: 700px;
-   
+  font-size: 18px;
+  color: #555;
+  width: 100%;
 }
-
 
 .about__card {
   background-color: #f9f9f9;
@@ -38,7 +32,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
-  width: 200px;
+  width: 180px;
   height: 120px;
 }
 
@@ -92,18 +86,20 @@
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1000;
-  left: 40px;
+  left: 29px;
   top: 90px;
+
+
 }
 
 .modal-content {
   background-color: #fffffff7;
   margin: 15% auto;
-  padding: 70px 50px;
+  padding: 50px 50px;
   border: 1px solid #888;
-  width: 80%;
-  width: 400px;
-  height: 300px;
+
+  width: 375px;
+  height: 100%;
   border-radius: 8px;
   position: relative;
   text-align: center;
@@ -119,7 +115,6 @@
   top: 10px;
   right: 20px;
   cursor: pointer;
- 
 }
 
 .close-button:hover,
