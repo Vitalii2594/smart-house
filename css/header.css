@@ -1,6 +1,7 @@
 .header {
-  background-color: #333; /* Kolor tła nagłówka */
-  color: #fff; /* Kolor tekstu */
+  background-color: #fffffff7;
+  color: #333;
+  border: 2px solid #007bff59; /* Kolor tła nagłówka */
   position: fixed; /* Nagłówek jest przyklejony do góry */
   top: 0;
   left: 0;
@@ -20,9 +21,8 @@
   align-items: center; /* Wyrównanie elementów do środka w osi pionowej */
   padding: 0 16px; /* Odstęp wewnętrzny po bokach */
   width: 100%;
-  
+
   margin: 0 auto; /* Wycentrowanie kontenera */
-  
 }
 
 .logo a {
@@ -52,7 +52,7 @@
 .burger span {
   width: 30px; /* Szerokość pasków burgera */
   height: 3px; /* Wysokość pasków burgera */
-  background-color: white; /* Kolor pasków */
+  background-color: #333; /* Kolor pasków */
   display: block; /* Każdy pasek jest blokiem */
 }
 
@@ -64,14 +64,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Ciemne tło z przezroczystością */
+  background-color: #ffffff;
+
   justify-content: center;
   align-items: center;
   z-index: 999; /* Modal jest nad wszystkimi elementami */
 }
 
 .burger-menu {
-  background-color: #333; /* Kolor tła modalnego menu */
+  background-color: #fffffff7;
+  border: 2px solid #007bff59; /* Kolor tła nagłówka */
   padding: 30px;
   text-align: center;
   width: 90%; /* Szerokość modalnego menu */
@@ -96,7 +98,7 @@
 
 .burger-menu-header .close-btn {
   cursor: pointer; /* Ikona zamknięcia zmienia się w kursor */
-  color: white;
+  color: #333;
   font-size: 24px; /* Wielkość ikony zamknięcia */
 }
 
@@ -110,9 +112,10 @@
 }
 
 .burger-menu ul li a {
-  color: white; /* Kolor tekstu w modalnym menu */
+  color: #333; /* Kolor tekstu w modalnym menu */
   text-decoration: none; /* Usunięcie podkreślenia */
-  font-size: 18px; /* Wielkość czcionki */
+  font-size: 20px; /* Wielkość czcionki */
+  font-weight: 600;
 }
 
 .burger-menu .contact-icons {
