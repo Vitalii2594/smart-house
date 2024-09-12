@@ -1,8 +1,8 @@
-
-
 @media screen and (max-width: 374px) {
   .container {
-  }}
+    width: 100%;
+  }
+}
 /*============== MOBILE ======= */
 
 @media screen and (min-width: 375px) {
@@ -68,7 +68,6 @@
   }
 
   .page-header {
-
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
@@ -332,20 +331,18 @@
   }
   .nav {
     display: flex;
-   }
-.nav__lists {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
+  }
+  .nav__lists {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
   .nav-link {
-   
     color: white;
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
-    
   }
   .burger {
     display: none; /* Ukryj burgera */
@@ -359,115 +356,112 @@
     display: flex;
     gap: 40px;
   }
-  .welcome  {
+  .welcome {
     height: 900px;
-     }
+  }
   .welcome__heading {
     font-weight: 600;
     font-size: 40px;
     line-height: 1.8;
     text-shadow: 2px 2px 2px rgb(62, 62, 66);
-     }
-
-     .welcome__link {
-     
-      height: 48px;
-      max-width: 360px;
-      justify-content: center;
-     align-items: center;
-    color: #676770;
-      font-weight: 400;
-      font-size: 24px;
-    
-    }
-    .cards-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 20px ;
-    }
-    .card {
-      max-width: 350px;
-      height: 410px;
-      padding: 25px 25px;
-    }
-    .about__card {
-          min-width: 264px;
-      height: 120px;
-    }
-.modal {
-  display: none;
-  position: fixed;
-  top: 29px;
-  left: 360px;
-  background-color: rgba(255, 255, 255, 0);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  padding: 30px;
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-}
-.services {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px ;
-}
-.service {
-  width: 500px;
-  height: 240px;
-  padding: 30px;
-}
-.smart-control {
-  padding-bottom: 80px;
-}
-.service-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-.service-box {
-  width: 500px;
-  margin-bottom: 0;
-}
-
-
-.footer {
-  padding-top: 40px;
-  border-top:  1px solid #e0e0e060; ;
- 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.footer-content-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40PX ;
-}
-.footer-content {
-  width: 100%;
-  padding-bottom: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.logo-footer {
-  display: flex;
-  justify-content: center;
-}
-.footer-container-form {
-  display: flex;
-  flex-direction: column;
-  margin-left: 180px;
   }
-.contact-details-ftr {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20PX ;
-}
-.footer-soc-content {
-  margin-top: 0;
-  padding-left: 200px;
-}
+
+  .welcome__link {
+    height: 48px;
+    max-width: 360px;
+    justify-content: center;
+    align-items: center;
+    color: #676770;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .card {
+    max-width: 350px;
+    height: 410px;
+    padding: 25px 25px;
+  }
+  .about__card {
+    min-width: 264px;
+    height: 120px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 29px;
+    left: 360px;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .service {
+    width: 500px;
+    height: 240px;
+    padding: 30px;
+  }
+  .smart-control {
+    padding-bottom: 80px;
+  }
+  .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .service-box {
+    width: 500px;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding-top: 40px;
+    border-top: 1px solid #e0e0e060;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .footer-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .footer-content {
+    width: 100%;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+  }
+  .contact-details-ftr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer-soc-content {
+    margin-top: 0;
+    padding-left: 200px;
+  }
 }
