@@ -1,7 +1,7 @@
 .header {
   background-color: #fffffff7;
   color: #333;
-  border: 2px solid #007bff59; /* Kolor tła nagłówka */
+ 
   position: fixed; /* Nagłówek jest przyklejony do góry */
   top: 0;
   left: 0;
