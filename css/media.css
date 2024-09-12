@@ -1,120 +1,26 @@
 @media screen and (max-width: 374px) {
   .container {
     width: 100%;
-  }
-}
-/*============== MOBILE ======= */
-
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-
-  .contacts {
-    display: none;
-  }
-
-  .footer-content {
     margin: 0 auto;
   }
-
-  .footer-description {
-    text-align: start;
-  }
-
-  .footer-content-wrapper {
-    text-align: center;
-  }
-
-  .footer-form-submit {
-    margin: 0 auto;
-  }
-
-  /* .mobile-menu-link.current::after {
-    display: block;
-    content: '';
-    background-color: #404bbf;
-    width: 50%;
-    height: 4px;
-    border-radius: 2px;
-    position: relative;
-    left: 0;
-    bottom: 0;
-  } */
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .contacts {
-    display: none;
-  }
-
-  .page-header {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-  }
-
-  /* Ukryj domyślną nawigację */
   .nav {
     display: none;
   }
 
-  /* Pokaż ikonę burgera */
   .burger {
     display: flex;
-    align-items: center;
-    cursor: pointer;
   }
 
-  /* Modalne menu - domyślnie ukryte */
   .burger-menu-overlay {
-    display: none; /* Ukryte */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Ciemne tło */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    display: none; /* Modal ukryty */
   }
 
-  /* Zawartość modalnego menu */
-  .burger-menu-content {
-    background-color: white;
-    width: 80%;
-    max-width: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-
-  /* Ukryj modal po otwarciu */
+  /* Modal aktywowany poprzez dodanie klasy active */
   .burger-menu-overlay.active {
-    display: flex; /* Pokaż modal */
+    display: flex; /* Pokazanie modalnego menu */
   }
 }
+/*============== MOBILE ======= */
 
 /* Min width: 375px, Max width: 599px */
 @media screen and (min-width: 375px) and (max-width: 599px) {
